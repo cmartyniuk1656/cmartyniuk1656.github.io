@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--TODO: ADD FONT FILE--------------------------------------------------------------->
+
+    <link rel="stylesheet" href="Styles/main.css" type="text/css">
+    <link rel="stylesheet" href="Styles/portfolio.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisAnimations.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisStyles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Passion+One|Audiowide'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Gruppo|Metamorphous|Metal+Mania|Trade+Winds|Overlock+SC|Iceland|Share+Tech+Mono|Megrim'
+          rel='stylesheet' type='text/css'>
+    <title>Chris Martyniuk | Home</title>
+
+    <!--TODO END-------------------------------------------------------------------------->
+</head>
+
+<body>
+<!--body-->
+<div id='background' class="background"></div>
+<div id='overLayer' class="overlay"></div>
+<div id='transOverlay'></div>
+
+<!--TODO: FIX NAV BAR--------------------------------------------------------------------->
+
+<nav class="jC-navtop jC-theme-blackTeal">
+    <ul class="no-margin">
+        <li id="zoomBtn"><div class='text-bold'>+</div></li>
+        <li id="zoomOutBtn"><div class='text-bold'>-</div></li>
+        <li id="zoomLbl"><span>Zoom</span></li>
+    </ul>
+</nav>
+<!--TODO END------------------------------------------------------------------------------->
+
+<section id='pageContent' class='container'>
+    <div class="wrapper">
+        <!--heading-->
+        <header id='homeTitle' class="container gradient-black-topBottom text-cntr">
+            <div id='titleBox-A' class="white-text-theme-A">
+                <h1 id="title">jChris API</h1>
+                <h2 id='specText'>Documentation</h2>
+                <h2>Under Construction</h2>
+            </div>
+        </header>
+        <!--//heading-->
+        <!--main-->
+        <div class="scalingWrap">
+                <img id="flowChartLarge" class='jC-imgLink jC-expandable jC-collapse'
+                     src="images/project/jChrisFlowchart.jpg" draggable="false"/>
+        </div>
+        <div id='mainContent' data-jc-zoomable>
+            <div id='jChrisApi' class="jC-row"
+                 data-jc-selectGroup="apiNav"
+                 data-jc-selectType="expandable">
+
+                <div class="jC-columns jC-columns-30 jC-content-dark">
+                    <div class="jC-row">
+                        <h1>General</h1>
+                    </div>
+                    <div class="jC-row">
+                        <ul>
+                            <li data-jc-selector="#infoPanel">INFO</li>
+                            <li data-jc-selector="#selectorPanel">SELECTORS</li>
+                            <li data-jc-selector="#chainingPanel">FUNCTION CHAINING</li>
+                            <li data-jc-selector="#flowChartPanel">FLOW CHART</li>
+                        </ul>
+                    </div>
+                    <div class="jC-row">
+                        <h1>Functions</h1>
+                    </div>
+                    <div class="jC-row">
+                        <ul>
+                            <li data-jc-selector="#retFunc">.ret()</li>
+                            <li data-jc-selector="#definedFunc">.defined()</li>
+                            <li data-jc-selector="#addEventFunc">.addEvent(type, func)</li>
+                            <li data-jc-selector="#removeEventFunc">.removeEvent(type, func)</li>
+                            <li data-jc-selector="#clickFunc">.click(func)</li>
+                            <li data-jc-selector="#mouseoverFunc">.mouseover(func)</li>
+                            <li data-jc-selector="#mouseoutFunc">.mouseout(func)</li>
+                            <li data-jc-selector="#addClassFunc">.addClass(className)</li>
+                            <li data-jc-selector="#removeClassFunc">.RemoveClass(className)</li>
+                            <li data-jc-selector="#hasClassFunc">.hasClass(className)</li>
+                            <li data-jc-selector="#setAttributeFunc">.setAttribute(attribute, value)</li>
+                            <li data-jc-selector="#pointerFunc">.pointer()</li>
+                            <li data-jc-selector="#fadeInFunc">.fadeIn()</li>
+                            <li data-jc-selector="#fadeOutFunc">.fadeout()</li>
+                            <li data-jc-selector="#halfFadeTransitionFunc">.halfFadeTransition()</li>
+                            <li data-jc-selector="#fadeInTransFunc">.fadeInTrans()</li>
+                            <li data-jc-selector="#hideFunc">.hide()</li>
+                            <li data-jc-selector="#showElementFunc">.showElement()</li>
+                            <li data-jc-selector="#backGroundImgFunc">.backgroundImg(url)</li>
+                        </ul>
+                    </div>
+                    <div class="jC-row">
+                        <h1>AJAX</h1>
+                    </div>
+                    <div class="jC-row">
+                        <ul>
+                            <li>.ajax(requestObject)</li>
+                            <li>.replaceById(Id)</li>
+                            <li>.insertById(Id)</li>
+                        </ul>
+                    </div>
+                    <div class="jC-row">
+                        <h1>WIDGETS</h1>
+                    </div>
+                    <div class="jC-row">
+                        <ul>
+                            <li>Select Groups</li>
+                            <li>Navigation Bar</li>
+                            <li>Zoomable Elements</li>
+                            <li>Media Swapper</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="infoPanel" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-expanded">
+                    <div class="jC-row"><br>
+                        <h1>GENERAL INFORMATION</h1>
+                    </div>
+                    <div class="jC-row">
+                        <p>jChris is a small personal library created for educational purposes. Developing jChris was a
+                            study in HTML, CSS, media queries, animations, transitions, JSON, AJAX, JavaScript,
+                            JavaScript object inheritence prototyping, cross browser compatibility techniques,
+                            JavaScript function chaining, and an in-depth look at how frameworks like jQuery and
+                            BootStrap operate under the hood.
+                        </p>
+                        <h1>WHAT IS IT</h1>
+                        <p>jChris contains a small number of helpful functions that help to code more efficiently,
+                            a small CSS library of classes that help style and structure responsive webpages with rows,
+                            columns, and media queries, as well as a few data-attribute widgets that automate
+                            functionality for notated HTML elements.
+                        </p>
+                    </div><br>
+                    <div class="jC-row">
+                        <h1>USES</h1>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Simplifies HTML Node Selection / Manipulation</h2>
+                        <p>Abbreviates JavaScript syntax involved with getting and manipulating HTML Node objects (like
+                            jQuery.)
+                        </p>
+                        <h2>Function Chaining and multi-selector strings</h2>
+                        <p>Execute multiple functions on multiple selectors in a single call that is easy and efficient
+                            to write, and easy to read.
+                        </p>
+                        <h2>AJAX Internal Domain HTML Node Retrieval</h2>
+                        <p>Grab any HTML Node object from any file on the domain by it's ID and inject it into the DOM
+                            with quick and easy jChris AJAX functions.
+                        </p>
+                        <h2>Preset Media Queries and Breakpoints</h2>
+                        <p>Use the jChris column and row classes to structure your website and it will automatically
+                            resize and rearrange it's anatomy based on the client screen display size.
+                        </p>
+                    </div>
+                </div>
+                <div id="selectorPanel" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h1>jChris SELECTORS</h1>
+                    </div>
+                    <div class="jC-row">
+                        <p>Similar to jQuery, jChris can select and manipulate HTML node objects with simplified
+                            selector query notation. Strings, nodes, node lists, HTML objects, and HTML object
+                            collections can all be passed into the jC() object as selectors.
+                        </p>
+                    </div><br>
+                    <div class="jC-row">
+                        <h1>STRING SELECTORS</h1>
+                        <h2>Description</h2>
+                        <p>Strings can be used to identify desired selector types using the standard selector notation
+                            used in jQuery and querySelector functions. The following notators can be used: "#" is
+                            used for specifying ID, '.' for class types, "<>" for tags, and '[]' for indices if
+                            multiple nodes are queried.
+                        </p>
+                        <h2>Examples</h2>
+                        <p>
+                            <span class="text-bold">
+                                jC('#myId') :
+                            </span>
+                            Selects a node with an ID of 'myId'.<br><br>
+                            <span class="text-bold">
+                                jC('.myClass') :
+                            </span>
+                            Creates a node list of every node in the DOM with a class of 'myClass'.<br><br>
+                            <span class="text-bold">
+                                jC('.myClass[0]') :
+                            </span>
+                            Selects the first node in the DOM with a class of 'myClass'.<br><br>
+                            <span class="text-bold">
+                                jC('&lt;p&gt;') :
+                            </span>
+                            Creates a node list of every node in the DOM with the 'p' tag.<br><br>
+                            <span class="text-bold">
+                                jC('&lt;p&gt;[0]') :
+                            </span>
+                            Selects the first node in the DOM with a 'p' tag.<br><br>
+                        </p>
+                    </div>
+                    <div class="jC-row">
+                        <h1>STRING MULTI SELECTORS</h1>
+                        <h2>Description</h2>
+                        <p>Multiple selectors can be combined in one call with string selectors seperated by commmas.
+                            This can be used to execute the same functions on multiple nodes efficiently.
+                        </p>
+                        <h2>Examples</h2>
+                        <p>
+                            <span class="text-bold">
+                                jC('#firstSelector, #secondSelector') :
+                            </span>
+                            Creates a node list containing 2 nodes with an ID of 'firstSelector' and
+                            'secondSelector'.<br><br>
+                            <span class="text-bold">
+                              jC('#firstSelector, .green, &lt;h1&gt;[1]') :
+                            </span>
+                            Creates a node list containing a node with an ID of 'firstSelector', all nodes with a
+                            CSS class of 'green', and the second h1 node found int he DOM.<br><br>
+                        </p>
+                    </div>
+                </div>
+                <div id="chainingPanel" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h1>jChris FUNCTION CHAINING</h1>
+                    </div>
+                    <div class="jC-row">
+                        <p>Similar to jQuery, jChris supports function chaining using inheritance prototyping by
+                            passing itself back into the original jChris constructor after each chained operation. This
+                            can increase efficiency greatly by reducing the amount of effort needed to execute multiple
+                            functions on the same node/nodes, even more so when combined with string multi-selectors.
+                        </p>
+                    </div><br>
+                    <div class="jC-row">
+                        <h1>CHAINED FUNCTION EXAMPLES</h1>
+                        <h2>Chaining Functions on a Single Node</h2>
+                        <p>
+                            <span class="text-bold">
+                                jC('#pageContent').showElement().addClass('green') :
+                            </span>
+                            Show the node with an ID of 'pageContent' if it is hidden then add a CSS class called
+                            'green' to it if it doesnt already have it.<br>
+                        </p>
+                        <h2>Chaining Functions on multiple Nodes</h2>
+                        <p>
+                            <span class="text-bold">
+                                jC('.navBtn, .selectedContent').removeClass('selected')removeClass('selectedContent') :
+                            </span>
+                            Removes CSS classes(if the nodes posses them) named 'selected, and 'selectedContent' from
+                            all nodes containing the CSS classes 'navBtn' and 'selectedContent'.<br><br>
+                        </p>
+                    </div>
+                </div>
+                <div id="flowChartPanel" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h1>jChris FLOWCHART</h1>
+                    </div>
+                    <div class="jC-row">
+                        <img id="flowChartTrigger" class="jC-imgLink jC-expandable jC-expanded"
+                             src="images/project/jChrisFlowchartSmaller.jpg" draggable="false"/>
+                    </div><br>
+                </div>
+                <div id="retFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.ret()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Returns an HTML Node object or Node list from the selector string passed into the the jC()
+                            object in the original set.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').ret();</p>
+                        <p>Returns and HTML Node object with the ID of 'myId'</p>
+                    </div>
+                </div>
+                <div id="definedFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.defined()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Evaluates the value of a javascript object. If the value is of type "undefined", no further
+                            chained functions will be executed, and a value of false is returned. If the object
+                            is evaluated and the value is not "undefined", chained function execution continues.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').defined().chainedFunction();</p>
+                        <p>If an HTML Node witht he ID of 'myId' exists in the current DOM, subsequent chained function
+                        calls will execute.</p>
+                    </div>
+                </div>
+                <div id="addEventFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.addEvent(type [string], func [function])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds an event handler to the specified node / nodes provided by the jC() selector argument.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Type [string] : Define the type of event to listen for.</p>
+                        <p class="text-bold">Func [function] : Define the function to execute when the listener is
+                            triggered.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').addEvent('click', function( { this.style.color = 'green' }));</p>
+                        <p>When the HTML Node with an ID of 'myId' is clicked, its CSS 'color' style will become 'green'.
+                        </p>
+                    </div>
+                </div>
+                <div id="removeEventFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.removeEvent(type [string], func [function])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Removes an event handler from the specified node / nodes provided by the jC() selector
+                            argument.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Type [string] : Define the type of event that will be removed.</p>
+                        <p class="text-bold">Func [function] : Identify the function that should be removed from
+                            the event listner. Does not work on annnymous functions.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').removeEvent('click', definedFunction));</p>
+                        <p>When the HTML Node with an ID of 'myId' is clicked, the previously defined and added event
+                            listener function 'definedFunction()' will no longer execute.
+                        </p>
+                    </div>
+                </div>
+                <div id="clickFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.click(func [function])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds an event for a click listener on the node / nodes selected from the original jC()
+                            string selector set.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Func [function] : This function will execute when selected node / nodes
+                        are clicked.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').click( function() { jC(this).hide() };);</p>
+                        <p>When the node '#myId' is clicked it will be hidden from view.
+                        </p>
+                    </div>
+                </div>
+                <div id="mouseoverFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.mouseover(func [function])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds an event for a mouse over listener on the node / nodes selected from the original jC()
+                            string selector set.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Func [function] : This function will execute when selected node / nodes
+                            are moused over.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').click( function() { jC(this).hide() };);</p>
+                        <p>When the node '#myId' is moused over it will be hidden from view.
+                        </p>
+                    </div>
+                </div>
+                <div id="mouseoutFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.mouseout(func [function])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds an event for a mouse out listener on the node / nodes selected from the original jC()
+                            string selector set.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Func [function] : This function will execute when selected node / nodes
+                            are moused out. (mouse over ends)</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').click( function() { jC(this).hide() };);</p>
+                        <p>When the cursor is no longer moused over tje node '#myId' it will be hidden from view.
+                        </p>
+                    </div>
+                </div>
+                <div id="addClassFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.addClass(className [String])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds a CSS class on the node / nodes selected from the original jC()
+                            string selector set.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">ClassName [string] : String name of the CSS class that will be added.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').addClass('myClass');</p>
+                        <p>A class with the name of 'myClass' will be added to a node witht an ID of '#myId'.
+                        </p>
+                    </div>
+                </div>
+                <div id="removeClassFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.removeClass(className [String])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Removes a CSS class on the node / nodes selected from the original jC()
+                            string selector set.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">ClassName [string] : String name of the CSS class that will be removed.</p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').removeClass('myClass');</p>
+                        <p>A class with the name of 'myClass' will be removed from a node witht an ID of '#myId'.
+                        </p>
+                    </div>
+                </div>
+                <div id="hasClassFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.hasClass(className [String])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Evaluates the existance of a CSS class on the selected HTML node. If the node does not have
+                            the specified class, chained functions will not be executed, and a value of false is
+                            returned. If the class is found, chained function execution continues.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">ClassName [string] : String name of the CSS class that will be evaluated.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#myId').hasClass('myClass').chainedFunction();</p>
+                        <p>If an HTML Node in the current DOM with he ID of 'myId' has a CSS class with the name of
+                            'myClass', subsequent chained function calls will execute.</p>
+                    </div>
+                </div>
+                <div id="setAttributeFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.setAttribute(attribute [String], value [string])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Set an HTML attribute value for the selected HTML Node / Nodes.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">Attribute [string] : String name of the HTML attribute that will be
+                            set.
+                        </p>
+                        <p class="text-bold">Value [string] : Value to set the attribute to as a string.
+                        </p>
+                    </div>
+                </div>
+                <div id="pointerFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.pointer()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>The mouse will become a pointer cursor when mousing over the selected element/elements.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('.clickableLink').pointer();</p>
+                        <p>All nodes with the CSS class 'clickableLink' will make the cursor into a pointer hand when
+                        moused over.</p>
+                    </div>
+                </div>
+                <div id="fadeInFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.fadeIn()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds a fade in animation class to selected elements.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#newElement').fadeIn();</p>
+                        <p>Fades in element with an ID of 'newElement'.</p>
+                    </div>
+                </div>
+                <div id="fadeOutFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.fadeOut()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds a fade out animation class to selected elements.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#newElement').fadeOut();</p>
+                        <p>Fades out element with an ID of 'newElement'.</p>
+                    </div>
+                </div>
+                <div id="halfFadeTransitionFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.halfFadeTransition()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds a fade out transition class to selected elements. Reduces opacity to 50%.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Required</h2>
+                        <p class="text-bold">Element must have the fullOpacity jChris CSS class.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#newElement').halfFadeTransition();</p>
+                        <p>Fades out element with an ID of 'newElement' to 50% opacity.</p>
+                    </div>
+                </div>
+                <div id="fadeInTransFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.fadeInTrans()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Adds a fade in transition class to selected elements. Sets opacity to 100%.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Required</h2>
+                        <p class="text-bold">Element must have the fadeHalf or noOpacity jChris CSS class.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#newElement').fadeInTrans();</p>
+                        <p>Fades in an element with an ID of 'newElement' to 100% opacity.</p>
+                    </div>
+                </div>
+                <div id="hideFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.hide()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Hides an element from view in the browser. Sets display attribute to 'none'.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#hiddenElement').hide();</p>
+                        <p>Element with an ID of 'hiddenElement' can no longer be viewed by the user.</p>
+                    </div>
+                </div>
+                <div id="showElementFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.showElement()</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Reveals a hidden element. Sets display attribute to 'block'.
+                        </p>
+                        <h2>Required</h2>
+                        <p class="text-bold">Element must have display attribute set to 'none'.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">None
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#newelement').showElement();</p>
+                        <p>Element with an ID of 'newElement' can now be seen be viewed by the user.</p>
+                    </div>
+                </div>
+                <div id="backgroundImgFunc" class="jC-columns jC-columns-70 jC-content-dark jC-expandable jC-collapse">
+                    <div class="jC-row"><br>
+                        <h3>.backgroundImg(url [string])</h3>
+                    </div>
+                    <div class="jC-row">
+                        <h2>Description</h2>
+                        <p>Changes the background attribute of an element.
+                        </p>
+                        <h2>Parameters</h2>
+                        <p class="text-bold">URL: This string defines the url of the new background image.
+                        </p>
+                        <h2>Example</h2>
+                        <p>jC('#background').backgroundImg("url('images/newBackground.jpg')");</p>
+                        <p>Element with an ID of 'background' now has a background image attribute url of
+                            'images/newBackground.jpg'.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+    <!--//main-->*
+</section>
+<br>
+<br>
+<br>
+<br>
+<!--//main-->
+<!--//body-->
+</body>
+<script type="text/javascript" src="libs/jChris/jChris.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+<footer class="theme-darkgrey">
+    <p>&copy; Copyright Chris Martyniuk</p>
+</footer>
+</html>
+

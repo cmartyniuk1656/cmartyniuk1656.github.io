@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--TODO: ADD FONT FILE--------------------------------------------------------------->
+
+    <link rel="stylesheet" href="Styles/main.css" type="text/css">
+    <link rel="stylesheet" href="Styles/portfolio.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisAnimations.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisStyles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Passion+One|Audiowide'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Gruppo|Metamorphous|Metal+Mania|Trade+Winds|Overlock+SC|Iceland|Share+Tech+Mono|Megrim'
+          rel='stylesheet' type='text/css'>
+    <title>Chris Martyniuk | Home</title>
+
+    <!--TODO END-------------------------------------------------------------------------->
+</head>
+
+<body>
+<!--body-->
+<div id='background' class="background"></div>
+<div id='overLayer' class="overlay"></div>
+<div id='transOverlay'></div>
+
+<!--TODO: FIX NAV BAR--------------------------------------------------------------------->
+
+
+<nav class="jC-navtop jC-theme-blackTeal">
+    <ul class="no-margin">
+        <li><a id="homepageBtn" data-jC-navBtn="home.html">HOME</a></li>
+        <li><a id="projectsBtn" data-jC-navBtn="projects.html">PROJECTS</a></li>
+        <li><a id="resumeBtn" data-jC-navBtn="projects.html">RESUME</a></li>
+        <li><a id="contactBtn" data-jC-navBtn="contacts.html">CONTACT</a></li>
+        <li id="zoomBtn"><div class='float-right text-bold'>+</div></li>
+        <li id="zoomOutBtn"><div class='float-right text-bold'>-</div></li>
+        <li id="zoomLbl"><span>Zoom</span></li>
+    </ul>
+</nav>
+<!--TODO END------------------------------------------------------------------------------->
+
+<section id='pageContent' class='container'>
+    <!--main-->
+    <!--heading-->
+    <header id='homeTitle' class="container gradient-black-topBottom text-cntr">
+        <div id='titleBox-A' class="white-text-theme-A">
+            <h1 id="title" class="transition1 not-visible">Chris Martyniuk</h1>
+            <h2 id='specText' class="transition2 not-visible">Programming - Database - UX - Design</h2>
+        </div>
+    </header>
+    <!--//heading-->
+    <!--projectSelect-->
+    <div id='mainContent' data-jc-zoomable>
+    <div id='projectSelectContainer' class="jC-row transition3 not-visible">
+        <div class="wrapper">
+            <ul id='projectSelect' class="jC-btn-group-rnd">
+                <li>
+                    <button id="projWebDev" class="jC-btn">Web</button>
+                </li>
+                <li>
+                    <button id="projSoftware" class="jC-btn">Software</button>
+                </li>
+                <li>
+                    <button id="projQA" class="jC-btn">QA</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="wrapper">-->
+    <!--<div id='projectBrowser' class="jC-row">-->
+    <!--<ul class="jC-btn-group-rnd jC-browser transition3 not-visible">-->
+    <!--<li>-->
+    <!--<button class="jC-btn jC-browser-left">◄</button>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<button id='projBrowserAll' class="jC-btn jC-browser-all">All</button>-->
+    <!--<div id="projDrop" class="dropdown hiddenElement">-->
+    <!--<div id="webDropdown">-->
+    <!--<button id='jChrisBtn'>jChris</button>-->
+    <!--</div>-->
+    <!--<div id="softwareDropdown">-->
+    <!--<button id='nPuzzleBtn'>nPuzzle</button>-->
+    <!--<button id='subsistenceBtn'>Subsistence</button>-->
+    <!--</div>-->
+    <!--<div id="qaDropDown">-->
+    <!--<button id='undefinedQaBtn'>QA Assignment</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<button class="jC-btn jC-browser-right">►</button>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--//projectSelect-->
+    <!--projects-->
+    <div id="projects" class='transition3 not-visible'>
+        <!--softwareProjects-->
+        <div id="softwareProjects" class="jC-transformable">
+            <!--nPuzzle-->
+            <div id="nPuzzle" class="jC-row jC-content-dark projects-software">
+                <div class="jC-columns text-cntr">
+                    <h1 class="no-border projectTitle">&nbsp;&nbsp;N-Puzzle&nbsp;&nbsp;</h1>
+                    <h1 class="projectHeader">Description</h1>
+                    <p>
+                        This is a C# windows forms application that models an N-puzzle tile-slider game. The objective
+                        of
+                        the
+                        game is to order the tiles sequencially from the top left to the bottom right.</p>
+                    <div class="jC-row">
+                        <div class="jC-columns">
+                            <h1 class="projectHeader">Features</h1>
+                            <ul>
+                                <li>Selectable puzzle size</li>
+                                <li>Save and load puzzles in progress</li>
+                                <li>Basic puzzle solving AI up to last 2 rows</li>
+                                <li>Cheat button for unsolveable puzzles</li>
+                                <li>Move counter</li>
+                                <li>Win counter</li>
+                            </ul>
+                            <h1 class="projectHeader">Unfinished</h1>
+                            <ul>
+                                <li>AI logic for last 2 rows</li>
+                                <li>Highscore module</li>
+                                <li>Recursive function bug fix</li>
+                                <li>Code clean-up</li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectHeader">Notes</h1>
+                            <p> This started out as an assign`ment where the objective was to make an n-puzzle
+                                game with selectable puzzle height and length, and a save / load feature.</p>
+                            <p> After satisfying the requirements of the assignment outline I continued to add
+                                to the project until the due date. At this point in my studies, my knowledge of C# and
+                                windows
+                                forms was limited. The result was a particularily inelegant solution that could be
+                                greatly
+                                improved.</p>
+                            <p>That being said, I was content with how the project turned out.</p>
+                        </div>
+                    </div>
+                    <div class="jC-row">
+                        <a href="downloadable/nPuzzle.zip">
+                            <button class="downloadBtn">Download</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="jC-columns project-video">
+                    <div class="jC-row projectVidLinks"><h1 class="mediaHeader">Videos</h1>
+                        <video id="nPuzzleVideo" width="100%" height="auto" controls="controls" preload="metadata">
+                            <source src="videos/nPuzzleDemo.webm" type="video/webm">
+                            <source src="videos/nPuzzleDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--//nPuzzle-->
+            <!--subsistence-->
+            <div id='subsistence' class="jC-row jC-content-dark projects-software">
+                <div class="jC-columns text-cntr">
+                    <h1 class="no-border projectTitle">&nbsp;&nbsp;Subsistence&nbsp;&nbsp;</h1>
+                    <h1 class="projectHeader">Description</h1>
+                    <p>Subsistence is an original C# XNA game studios game coded from scratch. The objective of the game
+                        is
+                        to
+                        live as long as possible. The game progresses through a night and day cycle. Each day the
+                        enemies
+                        become
+                        stronger, and the enemies at night are stronger than the enemies that spawn during the day.
+                        Leveling
+                        up
+                        restores your health and makes your character stronger. When you die a score is calculated based
+                        on
+                        your level, and the length of time that you survived.</p>
+                    <div class="jC-row ">
+                        <h1 class="projectHeader">Features</h1>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">2D Graphics</h1>
+                            <ul>
+                                <li>Animations</li>
+                                <li>Parallax Scrolling</li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">System Engines</h1>
+                            <ul>
+                                <li>Functional HP(health), MP(magic power), and XP(experience points) based leveling
+                                    game
+                                    mechanic engine
+                                </li>
+                                <li>Functional hotkey-based ability swap engine</li>
+                                <li>Cyclical day and night environment-altering game progression engine</li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Music</h1>
+                            <ul>
+                                <li>Original Title Screen music wirtten by myself; created with Frooty Loops Studio</li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">GUI</h1>
+                            <ul>
+                                <li>Dynamic HP, MP, and XP bar display</li>
+                                <li>Hotkey-based ability hotbar interface</li>
+                                <li>Day / night graphical timer display</li>
+                                <li>Main Menu Interface</li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Basic Enemy AI</h1>
+                            <ul>
+                                <li>Enemies detect player position</li>
+                                <li>Enemies decide when to use their attacks and their abilities have cooldown timers
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Physics</h1>
+                            <ul>
+                                <li>Rigid body collision detection</li>
+                                <li>Basic velocity altering object collision simulation</li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="jC-row">
+                        <h1 class="projectHeader">Notes</h1>
+                        <p> This game has a lot of unused potential. It was meant to be much larger in scale with many
+                            more
+                            features, and more use from the existing ones. </p>
+                        <p>I discontinued work on the game after I demo'd it as my final project for a game programming
+                            class
+                            where I signed a waiver transfering ownership of the source code to the college.</p>
+                        <a href="#">
+                            <button class="downloadBtn">Download N/A</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="jC-columns project-video jC-mediaSwapper">
+                    <div class="projectVidLinks">
+                        <div class="jC-row jC-vidLinks">
+                            <h1 class="mediaHeader media">Videos</h1>
+                            <div class="jC-vidLink jC-columns thumbnail-2-wide"
+                                 data-webm="videos/subsistenceTitleScreen.webm"
+                                 data-mp4="videos/subsistenceTitleScreen.mp4">
+                                <img class="jC-thumbnail selected" src="images/project/titleScreenVidThumb.jpg"/>
+                            </div>
+                            <div class="jC-vidLink jC-columns thumbnail-2-wide"
+                                 data-webm="videos/subsistenceGameplay.webm"
+                                 data-mp4="videos/subsistenceGameplay.mp4">
+                                <img class="jC-thumbnail" src="images/project/gameplayDemoThumb.jpg"/>
+                            </div>
+                        </div>
+                        <div class="jC-media-display">
+                            <video width="100%" height="auto" controls="controls" preload="metadata" src="">
+                                Your browser does not support the video tag.
+                            </video>
+                            <img class='hiddenElement' src=""/>
+                        </div>
+                        <div class="jC-imgLinks jC-row jC-four-col">
+                            <div class="jC-columns">
+                                <img class="jC-imgLink jC-thumbnail" src="images/project/titleScreen.jpg"/>
+                            </div>
+                            <div class="jC-columns">
+                                <img class="jC-imgLink jC-thumbnail" src="images/project/howToPlay.jpg"/>
+                            </div>
+                            <div class="jC-columns">
+                                <img class="jC-imgLink jC-thumbnail" src="images/project/help.jpg"/>
+                            </div>
+                            <div class="jC-columns">
+                                <img class="jC-imgLink jC-thumbnail" src="images/project/gameplay.jpg"/>
+                            </div>
+                            <h1 class="mediaHeader media">Screenshots</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!--//subsistence-->
+        <!--//softwareProjects-->
+        <!--webProjects-->
+        <div id="webProjects">
+            <div id='projectJChris' class="jC-row jC-content-dark projects-software">
+                <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;j<span class="text-size-150">C</span>hris&nbsp;&nbsp;
+                </h1>
+                <div class="jC-row">
+                    <img id='enlargedJchrisImg' class="jC-imgLink jC-expandable jC-collapse"
+                         src="images/project/dynamicDomQuery.jpg"/>
+                </div>
+                <div class="jC-columns text-cntr">
+                    <h1 class="projectHeader">Description</h1>
+                    <p>jChris is a custom website building utility library that I created as an experiement to try and
+                        reproduce some of the features of other popular libraries and frameworks with my own code. I
+                        used this porfolio as a sandbox for creating and testing jChris. It currently consists of one
+                        javaSCript library, and 2 CSS files. jChris is still a work in progress.</p>
+                    <div class="jC-row ">
+                        <h1 class="projectHeader">Features</h1>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Responsive Mobile First Design</h1>
+                            <ul>
+                                <li>Utilizes CSS3 media queries and screen size based metrics to allow for easy to code
+                                    websites that look good on all devices
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Asynchronous DOM Manipulation</h1>
+                            <ul>
+                                <li>Basic XML / JSON HTTP request functionality allowing developers to modify the DOM
+                                    without reloading the browser window.
+                                </li>
+                                <li>Allows easy to code and and create AJAX DOM queries, so you can load specific
+                                    elements from seperate HTML page, and build a custom DOM in a single call.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Styled</h1>
+                            <ul>
+                                <li>Comes with easy to learn CCS3 class structures and color themes so you can easily
+                                    create and style a website an infinite number of ways. Constantly being updated and
+                                    improved.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Fully Automated Class Widgets</h1>
+                            <ul>
+                                <li>Contains widget class families that scan the DOM for expected relative nodes,
+                                    automating the creation of their own event handlers, animations, transitions, and
+                                    user interactive functionality. No additional internal javaScript coding required.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Enhances JavaScript Readability / Reuseability</h1>
+                            <ul>
+                                <li>Many basic, commonly used javaScript functions have been repackaged, combined and /
+                                    or
+                                    renamed, into small, easily readable, higihly reusable jChris utility functions.
+                                    These
+                                    are designed to preform commonly required functionality, but are more
+                                    efficient and less tedious to code.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Cross Browser Compatibility</h1>
+                            <ul>
+                                <li>Utility functions often check for potential browser compatibility issues
+                                    and automate alternative execution strategies and/or implement polyfill prototype
+                                    work-arounds.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Transition / Animation Classes and Functions</h1>
+                            <ul>
+                                <li>Offers a small selection of animation / transition classes and functions, bypassing
+                                    the
+                                    hassle of manually coding them from scratch.
+                                <li>Built in animation and transition DOM manipulation interaction functions.
+                                    Asynchronously modify the dom and transition in a single function call.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Function Chaining</h1>
+                            <ul>
+                                <li>Inheritence prototyping passing the object back into its constructor after
+                                    execution allows for chained function calls to allow faster and sometimes more
+                                    readable coding.
+                                </li>
+                                <li>Example: jC('#id').addClass('selected')
+                                    .showElement()
+                                    .hide()
+                                </li>
+                                <li>Above example adds a class to an element with an id of 'id', then displays the
+                                    element, then hides it.
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="jC-row">
+                        <h1 class="projectHeader projectHighlights">Highlighted Skills Learned</h1>
+                        <h1 class="projectHighlightsHeader">Responsive Design</h1>
+                        <p class="center">Building my own responsive CSS3 framework from scratch has greatly improved
+                            my understanding of media queries, effective HTML structuring, CSS property implications,
+                            mobile first design philosophy, and the inner mechanics of the HTML box model.</p>
+                        <h1 class="projectHighlightsHeader">AJAX Dynamic Web Pages</h1>
+                        <p class="center">This was possibly my biggest motivation for writing this library. AJAX is
+                            becoming very popular in modern web development and I thought it would be important to learn
+                            how to implement my own AJAX functions in vanilla javaScript. I believe there are a lot of
+                            people in my program who are using AJAX through tools like jQuery, jQuery mobile, and
+                            Bootstrap
+                            who either don't know that they are doing it, or have no idea how it works or what it is
+                            doing (the same could be said about responsive CSS).</p>
+                        <h1 class="projectHighlightsHeader">Cross Browser Compatibility</h1>
+                        <p class="center">With all the incredible frameworks and libraries available today, cross
+                            browser testing is almost a thing of the past now. I wanted to make sure that my library was
+                            tested on and compatible with IE11, firefox, and chrome at the very least. Using no shims,
+                            and
+                            no external compatibility assisting libraries I have minimized most of the issues that I
+                            have
+                            encountered, and learned a lot of about each browsing platform in the process.</p>
+                    </div>
+                </div>
+                <div class="jC-columns">
+                    <div class="project-video">
+                        <div class="jC-imgLinks jC-row noBorder">
+                            <h1 class="projectHeader projectHighlights">jChris Example Function</h1>
+                            <div class="jC-row">
+                                <h1 class="projectHighlightsHeader">AJAX DOM Construction Query</h1>
+                                <img id='smallJchrisImg' class="jC-imgLink jC-thumbnail jC-expandable"
+                                     src="images/project/dynamicDomQueryThumb.jpg"/>
+                            </div>
+                            <div class="jC-row">
+                                <h1 class="projectHeader projectHighlights">Code</h1>
+                                <b><p class='center'>jC.ajaxQuery(element, url, key, pushBrowserState,
+                                    jChrisEvents)</p></b>
+                                <ul>
+                                    <li><p><b>element(String) :</b> Specify the element you will insert the new DOM
+                                        segment
+                                        into. jChris supports selector notated strings. Example: '#elementId' will
+                                        search for a node object with an ID of elementID. Similarly '.myClass[0]'
+                                        will find the first node in the document with a class of 'myClass'.</p>
+                                    </li>
+                                    <li><p><b>url(String) :</b> Specify the url of the file you want select nodes from.
+                                        Example : 'projects.html'. Currently supports files in the same directory
+                                        only.</p>
+                                    </li>
+                                    <li><p><b>key(String) :</b> When creating your html files, you need to notate
+                                        areas that you might want to use in a DOM query by using comment tags in
+                                        this format:</p>
+                                        <p class="center">
+                                            <b>'&#60;!--keyIdentifier--></b>
+                                            <i>Your HTML code will be here</i>
+                                            <b>&#60;!--//keyIdentifier-->'.</b>
+                                        </p>
+                                        <p>
+                                            When you make the key you separate each object you wish to add with a '|'.
+                                            If you want to build a new div between two objects you can open it using
+                                            this syntax 'jC[id=idName]' and close it like this 'jC[/idName]'. Here is
+                                            an example key:</p>
+                                        <p class="center">
+                                            <b>
+                                                'heading|projectSelect|jC[id=projects]|webProjects|jC[/projects]'.
+                                            </b>
+                                        </p>
+                                    </li>
+                                    <li><p><b>pushBrowserState(Boolean) :</b> Specify whether or not the browser
+                                        should update the new DOM state into browser history. Assumes false if
+                                        left undefined.</p>
+                                    </li>
+                                    <li><p><b>jChrisEvents(function) :</b> If you want to define custom event handlers
+                                        for the new DOM objects you can pass them here. This function will run
+                                        after the new DOM is fully loaded.</p>
+                                    </li>
+                                </ul>
+                                <h1 class="projectHeader projectHighlights">Directly Grab Elements</h1>
+                                <b><p class='center'>jC('element').ajax('url').replaceById('elementId')</p></b>
+                                <ul>
+                                    <li><p>First element is the target to insert new element into, url is the url to
+                                        search for the new element's ID, elementID is the ID of the new element.</p>
+                                    </li>
+                                    <li><p>jChris gets the url's source HTML, and parses the markup as a string,
+                                        locating the full element before injecting it into the current DOM. </p>
+                                    </li>
+                                    <li><p>The ajax(url) argument can be replaced by a request object containing a url
+                                        string, custom events, a custom ajax request call, and a custom request type. </p>
+                                    </li>
+                                </ul>
+                                <a href="jchris.html">
+                                    <h1 class="no-border webProjectTitle jChrisApi">j<span class="text-size-150">C</span>hris
+                                        <span class="text-size-150">A</span>pi  <span class="text-size-150">
+                                        D</span>ocumentation</h1>
+                                    <h1 class="projectHeader">Under
+                                        Construction</h1><br><br>
+                                </a>
+                                <h1 class="projectHighlightsHeader">Notes</h1>
+                                <p> jChris is still an unfinished experiment and contains many bugs. I started
+                                    jChris with a basic knowledge of jQuery, but no experience using any other
+                                    libraries or frameworks that are rapidly becoming industry standards. I wanted to
+                                    learn the mechanics behind other libraries and frameworks, so that when I did adopt
+                                    them, I would be able to understand their capabilities at a more intermediate level.
+                                </p>
+                                <p>
+                                    Since I started this project I have learned a lot and could go back to optimize
+                                    it far beyond the current build, but I will put it down and advance on to more
+                                    practical, widely used libraries and frameworks.
+                                </p>
+
+                                <div id="jChrisDownload">
+                                    <a href="https://gist.github.com/cmartyniuk1656/83133fc0f344881b85ce887ac0233156">
+                                        <button class="downloadBtn">View Source</button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//webProjects-->
+        <!--qaProjects-->
+        <div id="qaProjects">
+            <div id='projectSelenium' class="jC-row jC-content-dark projects-software">
+                <h1 class="jC-row no-border webProjectTitle ">
+                    <span class="text-size-150">S</span>elenium System Testing
+                </h1>
+                <div class="jC-row">
+                    <img id='bigImg' class="jC-imgLink jC-collapse" src="images/project/dynamicDomQuery.jpg"/>
+                </div>
+                <div class="jC-columns text-cntr">
+                    <h1 class="projectHeader">Description</h1>
+                    <p>This was a two part assignment requiring a web application and a Selenium System Test Suite. I
+                        opted to code my test suite by hand instead of relying on the automated Selenium IDE generated
+                        code because this was our first exposure to the browser driver object, and I found it quite
+                        interesting.</p>
+                    <p>The website should accept form data and store it to a local data store, then present it later
+                        and supply links for the entered vehicles to similar vehicles on the jdpower vehicle market
+                        website. We needed to test system functionality and validation as a mock user/business
+                        acceptance testing scenario. Coded on netbeans IDE 8.1..</p>
+                    <div class="jC-row ">
+                        <h1 class="projectHeader">Application Features</h1>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Basic Data Management via JSON Parsing / Local
+                                Storage</h1>
+                            <ul>
+                                <li>Vehicle information is converted into unique hash string keys and stored in
+                                    local storage as a string (JSON stringify). It can later be retrieved, JSON
+                                    parsed back into a complex object, and displayed for the users.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Dynamically Generated Functional Links</h1>
+                            <ul>
+                                <li>By manipulating user input strings with regular expressions and string functions,
+                                    user form input data is applied to generate functional links to jdPower website
+                                    displaying the user's entered vehicle if it exists.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+                <div class="jC-columns">
+                    <div class="jC-row ">
+                        <h1 class="projectHeader">Test Suite Features</h1>
+                    </div>
+                    <div class="jC-columns">
+                        <h1 class="projectFeatureHeader">NUnit integration</h1>
+                        <ul>
+                            <li>Selenium translated to C# and fully coded using the NUnit testing class library.
+                                All together this assignment made use of HTML, javaScript, CSS, C#, Selenium,
+                                NUnit, java, JST, and XML.
+                            </li>
+                        </ul>
+                        <h1 class="projectFeatureHeader">Asserts For Expectations and Logs Minor Exceptions</h1>
+                        <ul>
+                            <li>My test suite does not always end a test case when an expectation is not delivered.
+                                Custom soft asserts check for minor bugs that will not crash the system or impede
+                                useability, finishing the test case before failing it with detailed exception
+                                messages detailing the weak points in the module.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jC-columns">
+                        <h1 class="projectFeatureHeader">Maps Interactive Nodes</h1>
+                        <ul>
+                            <li>Constantly updates important user interactive node locations, mapping and binding
+                                their position to a page object; ensuring that test cases still operate as
+                                intended while the DOM is being updated or rearranged.
+                            </li>
+                        </ul>
+                        <h1 class="projectFeatureHeader">Thoughtfully Desgined</h1>
+                        <ul>
+                            <li>I put a lot of work into designing my test suite. Its easy to pick an expectation
+                                and assert for that value, but it is difficult to try and catch potential bugs that
+                                you havn't discovered yet. I wrote custom classes, exceptions, and static utility
+                                methods that attempt to cover as much area as possible, while imporoving on
+                                the readability and coding efficiency of the standard C# Selenium function library.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="downloadQa">
+                        <a href="#">
+                            <button class="downloadBtn">Download N/A</button>
+                        </a>
+                    </div>
+                </div>
+                    <div class="jC-imgLinks jC-row noBorder">
+                        <div class="project-video">
+                            <video width="100%" height="auto" controls="controls" preload="metadata">
+                                <source src="videos/qa4WebApp.webm" type="video/webm">
+                                <source src="videos/qa4WebApp.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h1 class="projectFeatureHeader">Selenium has depreciated since I made my tests.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--//qaProjects-->
+        <!--//projects-->
+        <!--//main-->
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--//body-->
+</body>
+<script type="text/javascript" src="libs/jChris/jChris.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+
+<footer class="theme-darkgrey">
+    <p>&copy; Copyright Chris Martyniuk</p>
+</footer>
+</html>
+

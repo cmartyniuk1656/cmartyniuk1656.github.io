@@ -1,0 +1,134 @@
+
+/*------------------------------------------------- OPACITY ANIMATIONS -----------------------------------------------*/
+
+@-webkit-keyframes jChrisFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes jChrisFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes jChrisFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes jChrisFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+@-webkit-keyframes jChrisFadeInHalf {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+@keyframes jChrisFadeInHalf {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes jChrisFadeOutHalf {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+@keyframes jChrisFadeOutHalf {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+/*------------------------------------------------- OPACITY TRANSITIONS ----------------------------------------------*/
+
+.transFade:hover {
+    opacity: 0;
+}
+.transFadeHalf:hover {
+    opacity: 0.5;
+}
+
+.not-visible {
+    opacity: 0;
+}
+
+/*------------------------------------------------- TRANSITION CLASSES -----------------------------------------------*/
+
+.fullOpacity {
+    opacity: 1;
+    transition-property: opacity;
+}
+
+.noOpacity {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.fadeHalf {
+    opacity: 0.5;
+    transition-property: opacity;
+}
+
+.hiddenElement {
+    border: none !important;
+    padding: 0 !important;
+    max-height: 0 !important;
+    opacity: 0;
+    overflow: hidden;
+    display: none;
+    transition-property: max-height;
+    -webkit-transition: max-height 800ms;
+    -moz-transition: max-height 800ms;
+    transition: max-height 800ms;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.jC-expandable {
+    max-height: 3000px;
+    overflow: hidden;
+    transition-property: all;
+    -webkit-transition: max-height 800ms, padding 800ms;
+    -moz-transition: max-height 800ms, padding 800ms;
+    transition: max-height 800ms, padding 800ms;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.jC-collapse {
+    max-height: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+
+}
+
+/*img.jC-collapse.jC-expanded {*/
+    /*max-height: 3000px !important;*/
+    /*overflow: hidden;*/
+
+/*}*/
+
+/*img .jC-imgLink.jC-thumbnail.jC-expanded.jC-collapse {*/
+    /*max-height: 0;*/
+/*}*/
+
+
+.jC-transformable {
+    max-height: 10000px;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    transition: all 800ms;
+}
+
+.jC-trigger {
+    padding: auto;
+    width: auto;
+    margin: auto;
+}
+
+.jC-trigger:hover {
+    cursor: pointer;
+    color: goldenrod !important;
+}
+
+
+/*------------------------------------------------- PLACE HOLDER -----------------------------------------------------*/
+
+

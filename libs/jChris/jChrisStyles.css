@@ -1,0 +1,354 @@
+
+/*---------------------------------------------- jChris NAVIGATON BARS------------------------------------------------*/
+.jC-navtop {
+    list-style-type: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    font-size: 125%;
+    z-index: 20000;
+    overflow-x: hidden;
+}
+
+.jC-navtop ul {
+
+    overflow-x: hidden;
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+}
+
+.jC-navtop li {
+    float: left;
+}
+
+.jC-navtop li:hover {
+    cursor: pointer;
+}
+
+.jC-theme-blackTeal {
+    font-family: 'Audiowide', cursive;
+    background-color: black;
+    color: white;
+}
+
+.jC-navtop.jC-theme-blackTeal a img:hover {
+    background-color: teal;
+}
+
+.jC-navtop.jC-theme-blackTeal img {
+    float: right;
+    padding: 10px;
+}
+
+.jC-navtop.jC-theme-blackTeal li a, .jC-navtop.jC-theme-blackTeal li div, .jC-navtop.jC-theme-blackTeal li span {
+    display: block;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.jC-navtop.jC-theme-blackTeal li a:hover, .jC-navtop.jC-theme-blackTeal li div:hover {
+    color: black;
+    background-color: white;
+}
+
+.jC-navtop.jC-theme-blackTeal .selected {;
+    color: black;
+    background-color: teal;
+}
+
+
+
+/* ------------------------------------------------ CONTENT BLOCKS ---------------------------------------------------*/
+
+.jC-content-white {
+    -moz-border-radius: 5px 20px 5px 20px;
+    -webkit-border-radius: 5px 20px 5px 20px;
+    border-radius: 5px 20px 5px 20px;
+    background: rgba(250, 255, 250, 1);
+    font-family: lato, sans-serif;
+    color: #222222;
+    text-shadow:5px 8px 10px rgba(228, 233, 228, 1);
+    -moz-box-shadow:10px 10px 5px #000000;
+    -webkit-box-shadow:10px 10px 5px #000000;
+    box-shadow:10px 10px 5px #000000;
+    padding: 16px;
+}
+
+.jC-content-white h1 {
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 250%;
+    color: #000000;
+}
+
+.jC-content-dark
+{
+    -moz-border-radius: 5px 20px 5px 20px;
+    -webkit-border-radius: 5px 20px 5px 20px;
+    border-radius: 5px 20px 5px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    font-family: lato, sans-serif;
+    color: #aaaaaa;
+    text-shadow:5px 8px 10px #000000;
+    -moz-box-shadow:10px 10px 5px #000000;
+    -webkit-box-shadow:10px 10px 5px #000000;
+    box-shadow:10px 10px 5px #000000;
+    padding: 16px;
+}
+
+.jC-content-dark h1 {
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 250%;
+    color: white;
+}
+
+.jC-content-dark h2 {
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 200%;
+}
+
+.jC-content-dark h3 {
+    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 110%;
+}
+
+.jC-fixed-full
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 1s;
+}
+
+
+
+/* ---------------------------------------------------- COLUMNS ------------------------------------------------------*/
+
+.jC-row {
+    max-width: 95%;
+    height: 100%;
+    display: block;
+    margin: auto auto 1rem auto;
+    box-sizing: border-box;
+}
+
+.jC-row .jC-row {
+    margin: auto;
+    min-width: 100%;
+}
+
+.jC-row .jC-row li {
+    line-height: 1.5;
+    text-align: left;
+}
+
+.jC-columns {
+    width: 100%;
+    height: inherit;
+    float: left;
+    padding: .9375rem;
+    margin-bottom: 1.5rem;
+}
+
+.jC-row .jC-coulmns.jC-columns-70, .jC-row .jC-coulmns.jC-columns-30 {
+    width: 100%;
+    height: inherit;
+}
+.jC-row .jC-coulmns.jC-columns-30 {
+    width: 100%
+}
+
+.jC-columns p {
+    text-align: left;
+}
+
+.jC-columns p.center {
+    text-align: center;
+}
+
+.jC-columns:last-child {
+    float: right;
+    width: 100%;
+}
+
+@media screen and (max-width: 80em) and (min-width: 45em) {
+    .jC-columns {
+        width: 100%;
+    }
+    .jC-columns ul {
+        margin-left: 0;
+    }
+    .jC-row {
+        max-width: 70%;
+    }
+    .jC-row .jC-row .jC-columns {
+        max-width: 50%;
+    }
+
+    .jC-row .jC-columns.jC-columns-70 {
+        width: 100% !important;
+        padding: .9375rem;
+
+    }
+    .jC-row .jC-columns.jC-columns-30 {
+        width: 100% !important;
+        padding: .9375rem;
+    }
+
+}
+
+@media screen and (min-width: 80em) {
+    .jC-columns {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .jC-columns.jC-columns-70 {
+        width: 69% !important;
+        padding: .9375rem;
+
+    }
+    .jC-columns.jC-columns-30 {
+        width: 29% !important;
+        padding: .9375rem;
+    }
+
+    .jC-columns ul {
+        margin-left: 0;
+        padding-left: 8px  !important;
+    }
+    .jC-columns:last-child {
+        width: 50%;
+        padding: auto;
+    }
+    .jC-row {
+        max-width: 1325px;
+    }
+}
+
+.jC-four-col .jC-columns{
+    width: 25% !important;;
+    float: left;
+}
+
+.jC-row::after {
+    clear: both;
+}
+.jC-row::after, .jC-row::before {
+    content: ' ';
+    display: table;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.jC-halfDiv {
+    width: 50% !important;
+    padding-right: .9375rem !important;
+    padding-left: .9375rem !important;
+}
+
+/* ---------------------------------------------------- CONTROLS -----------------------------------------------------*/
+
+.jC-btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-weight: normal;
+    line-height: 0;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.88889rem 1.77778rem 0.94444rem 1.77778rem;
+    font-size: 0.88889rem;
+    background-color: #008CBA;
+    border-color: #007095;
+    color: #FFFFFF;
+    transition: background-color 300ms ease-out;
+}
+
+.jC-btn-group-rnd button.jC-btn {
+    border: 5px outset buttonface;
+    border-color: black;
+    max-height: 50px;
+}
+
+.jC-btn-group-rnd {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+}
+.jC-btn-group-rnd li {
+    float: left;
+}
+
+.jC-btn-group-rnd:before, .jC-btn-group-rnd:after {
+    content: " ";
+    display: table;
+}
+
+.jC-btn-group-rnd:after {
+    clear: both;
+}
+
+.jC-btn-group-rnd > *:first-child, .jC-btn-group-rnd > *:first-child > a, .jC-btn-group-rnd > *:first-child > button,
+.jC-btn-group-rnd > *:first-child > .jC-btn {
+    -webkit-border-bottom-left-radius: 1000px;
+    -webkit-border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+    border-top-left-radius: 1000px;
+    border-left: 3px outset buttonface !important;
+    border-color: black !important;
+}
+
+.jC-btn-group-rnd > *:last-child, .jC-btn-group-rnd > *:last-child > a, .jC-btn-group-rnd > *:last-child > button,
+.jC-btn-group-rnd > *:last-child > .jC-btn {
+    -webkit-border-bottom-right-radius: 1000px;
+    -webkit-border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-top-right-radius: 1000px;
+}
+
+/* ---------------------------------------------------- IMAGES -------------------------------------------------------*/
+
+.jC-thumbnail {
+    border: 4px solid #aaaaaa;
+    box-shadow: 0 0 0 1px rgba(10,10,10,.2);
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    transition: all 800ms ease-out;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.jC-media-display img {
+    width: 100%    !important;
+    height: auto   !important;
+}
+

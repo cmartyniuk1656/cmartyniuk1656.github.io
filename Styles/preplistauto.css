@@ -1,0 +1,257 @@
+.prepBtn, .prepBtnMain {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    min-height: 300px; !important;
+    font-size: 400%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+.prepBtnLeft {
+    min-width: 75% !important;
+    max-width: 75% !important;
+    float: left;
+    min-height: 300px; !important;
+    font-size: 400%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.prepBtnRight {
+    min-width: 24.75% !important;
+    max-width: 24.75% !important;
+    float: left;
+    min-height: 300px; !important;
+    font-size: 400%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+}
+
+.prepBtnCountUI {
+    min-width: 100% !important;
+    max-width: 100% !important;
+    min-height: 100%; !important;
+    font-size: 300%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: transparent;
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.prepBtnCountUI .prepAutoHeader{
+    min-width: 66% !important;
+    max-width: 66% !important;
+    min-height: 100px; !important;
+    font-size: 100%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    /*padding: 35px auto auto auto;*/
+    float: left;
+}
+
+.prepBtnCountNumberKey {
+    min-width: 33% !important;
+    max-width: 33% !important;
+    min-height: 200px; !important;
+    font-size: 400%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    float: left;
+}
+
+.prepBtnCountBackspace{
+    min-width: 66% !important;
+    max-width: 66% !important;
+    min-height: 200px; !important;
+    font-size: 400%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    float: left;
+}
+
+.prepBtnCountCAL, #prepBtnCountNeed, #prepBtnCountDontNeed {
+    min-width: 33% !important;
+    max-width: 33% !important;
+    min-height: 200px; !important;
+    font-size: 350%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    float: left;
+}
+
+#prepBtnCountNeed {
+    color: red;
+    font-size: 350%;
+}
+
+#prepBtnCountDontNeed {
+    color: lime;
+    font-size: 350%;
+}
+
+.prepBtnCountSave {
+    min-width: 99.75% !important;
+    max-width: 99.75% !important;
+    min-height: 200px; !important;
+    font-size: 350%;
+    font-family: 'Audiowide', sans-serif !important;
+    background-color: #1a1a1a;
+    padding: 0;
+    float: left;
+    color: #2d68c6;
+
+}
+
+#homeTitle {
+    margin-top: 0!important;
+}
+
+.prepBtnContainer {
+    margin-top: 2%;
+}
+
+.prepAutoHeader {
+    font-size: 400%;
+    color: #c63900;
+    margin-top: 2%;
+    min-width: 66% !important;
+    max-width: 66% !important;
+}
+
+.prepCounted{
+    color: lime !important;
+    border: none !important;
+}
+
+.prepCountedNeedMore{
+    color: #c00800 !important;
+    border: none !important;
+}
+
+.CAL{
+    color: #ddab02 !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#prepDigitCal {
+    color: #ddab02 !important;
+    font-size: 350%;
+}
+
+
+.prepCountedNotNeeded{
+    color: crimson;
+    border: none !important;
+    background-color: transparent !important;
+    font-size: 250%;
+}
+
+
+#prepCountBox {
+    background-color: transparent;
+    font-size: 600%;
+    color: #c63900;
+    border:none;
+    text-align: center;
+    min-width: 100%;
+}
+
+#prepCountTitle{
+    background-color: transparent;
+    color: #c63900;
+    border: none;
+    font-size: 600%;
+    text-align: center;
+    min-width: 100%;
+}
+
+#prepTronImg {
+    z-index: 1000;
+    width: 75%;
+    max-height: 1200px;
+    margin: 0 auto 0 auto;
+    align-content: center;
+}
+
+#bottomBtns {
+    position: fixed;
+    bottom: 0;
+}
+
+.prepBtnBlack{
+    background: black;
+    border: none;
+}
+
+.scalingWrap {
+    height: 100%;
+    width: 100%;
+}
+
+.titleRowPrep {
+    top: 0;
+    min-height: 15%;
+    max-height: 15%;
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    min-width: 100%;
+}
+
+.titleRowPrep input{
+    font-family: 'Audiowide', sans-serif !important;
+}
+
+.prepBtn.gradient-to-sides-black, .prepBtnLeft.gradient-to-sides-black, .prepBtnLeft.gradientFromLeft {
+    background-color: transparent;
+    border-color: lawngreen;
+    text-align: left;
+    border-top: none;
+}
+
+#inputPad {
+    margin-top: 25%;
+}
+
+.prepBtnRight.gradient-to-sides-black, .prepBtnRight.gradientFromLeft {
+    background: none;
+    border-color: lawngreen;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: crimson;
+}
+
+.prepBtnMain.gradient-to-sides-black, .prepBtnMain.gradientFromLeft {
+    background-color: transparent;
+    color: #f2ff00;
+    border: none;
+}
+
+#prepDaySelectReturn {
+    position: static;
+    bottom: 0;
+}
+
+.gradientFromLeft {
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(0,0,0,1), rgba(0, 0, 0, 0.75), rgba(255,0,0,0)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(0,0,0,1),rgba(0,0,0,0.75), rgba(255,0,0,0)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(0,0,0,1),rgba(0,0,0,0.75), rgba(255,0,0,0)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.75), rgba(255,0,0,0)); /*Standard*/
+}

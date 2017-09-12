@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--TODO: ADD FONT FILE--------------------------------------------------------------->
+
+    <link rel="stylesheet" href="Styles/main.css" type="text/css">
+    <link rel="stylesheet" href="Styles/portfolio.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisAnimations.css" type="text/css">
+    <link rel="stylesheet" href="libs/jChris/jChrisStyles.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Passion+One|Audiowide'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900|Gruppo|Metamorphous|Metal+Mania|Trade+Winds|Overlock+SC|Iceland|Share+Tech+Mono|Megrim'
+          rel='stylesheet' type='text/css'>
+    <title>Chris Martyniuk | Home</title>
+
+    <!--TODO END-------------------------------------------------------------------------->
+</head>
+
+<body>
+<!--body-->
+<div id='background' class="background"></div>
+<div id='overLayer' class="overlay"></div>
+<div id='transOverlay'></div>
+
+<!--TODO: FIX NAV BAR--------------------------------------------------------------------->
+
+<nav class="jC-navtop jC-theme-blackTeal" data-jC-navbar>
+    <ul class="no-margin">
+        <li><a id="homepageBtn" data-jC-navBtn="home.html">HOME</a></li>
+        <li><a id="projectsBtn" data-jC-navBtn="projects.html">PROJECTS</a></li>
+        <li><a id="resumeBtn" data-jC-navBtn="projects.html">RESUME</a></li>
+        <li><a id="contactBtn" data-jC-navBtn="contacts.html">CONTACT</a></li>
+        <li id="zoomBtn"><div class='text-bold'>+</div></li>
+        <li id="zoomOutBtn"><div class='text-bold'>-</div></li>
+        <li id="zoomLbl"><span>Zoom</span></li>
+    </ul>
+</nav>
+<!--TODO END------------------------------------------------------------------------------->
+
+<section id='pageContent' class='container'>
+    <div class="wrapper">
+        <!--heading-->
+        <header id='homeTitle' class="container gradient-black-topBottom text-cntr">
+            <div id='titleBox-A' class="white-text-theme-A">
+                <h1 id="title" class="transition1 not-visible">Chris Martyniuk</h1>
+                <h2 id='specText' class="transition2 not-visible">Programming - Database - UX - Design</h2>
+            </div>
+        </header>
+        <!--//heading-->
+        <!--main-->
+        <div id='mainContent' data-jc-zoomable>
+        <div class="jC-row transition3 not-visible">
+            <div class="jC-columns jC-columns-70 jC-content-dark">
+                <h1>Welcome</h1>
+                <p class="text-cntr text-bold">
+                    Hi, my name is Chris Martyniuk. I am an aspiring software / web developer with a passion for
+                    creating engaging,
+                    responsive digital media. Enjoy looking at my portfolio.
+                </p>
+                <br>
+                <p class="quote"> &quot;Whether you think you can, or you think you can't, you're right.&quot;</p>
+                <br>
+                <p class="quote">- Thomas Ford</p>
+                <br><br>
+            </div>
+            <div class="jC-columns jC-columns-30 jC-content-dark">
+                <h1>Note</h1>
+                <p>This site is hand coded with HTML, JavaScript, and CSS, using no external libraries or
+                    frameworks.</p>
+                <p>The only tool used is jChris, a custom website building javaScript library, which I am currently
+                developing.</p>
+                <p class="text-cntr quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(click for details)</p>
+                <h1 class="no-border webProjectTitle jChrisApi jChrisLink">
+                    j<span class="text-size-150">C</span>hris</h1>
+            </div>
+        </div>
+        <br>
+        <div class="jC-row catagoryTitle gradient-to-sides-black transition3 not-visible">
+            <h1>Skills</h1>
+        </div>
+        <br>
+        <div id='devSkills' class="jC-row transition3 not-visible">
+
+            <div id='devSkillsCol1' class="jC-columns jC-columns-30 jC-content-dark transistion3">
+                <div class="jC-row">
+                    <h1>Development Skills</h1><br>
+                </div>
+                <div class="jC-row">
+                    <div class="jC-row">
+                        <div class="jC-row skillBgs">
+                            <div class="devSkill jC-columns">
+                                <div class="skillText">
+                                    Web
+                                </div>
+                                <img id='webDevSkill' draggable="false"
+                                     class="selected"
+                                     data-selectType="src"
+                                     data-selected="images/icons/webDevHover.png"
+                                     data-unSelected="images/icons/webDev.png"
+                                     src="images/icons/webDevHover.png">
+                            </div>
+                            <div class="devSkill jC-columns">
+                                <div class="skillText">
+                                    Mobile
+                                </div>
+                                <img id='mobileDevSkill' draggable="false"
+                                     data-selectType="src"
+                                     data-selected="images/icons/mobileDevHover.png"
+                                     data-unSelected="images/icons/mobileDev.png"
+                                     src="images/icons/mobileDev.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jC-row">
+                        <div class="jC-row skillBgs">
+                            <div class="devSkill jC-columns">
+                                <div class="skillText">
+                                    Software
+                                </div>
+                                <img id='softwareDevSkill' draggable="false"
+                                     data-selectType="src"
+                                     data-selected="images/icons/softwareDevHover.png"
+                                     data-unSelected="images/icons/softwareDev.png"
+                                     src="images/icons/softwareDev.png">
+                            </div>
+                            <div class="devSkill jC-columns">
+                                <div class="skillText">
+                                    User Experience
+                                </div>
+                                <img id='uxDevSkill' draggable="false"
+                                     data-selectType="src"
+                                     data-selected="images/icons/uxDevHover.png"
+                                     data-unSelected="images/icons/uxDev.png"
+                                     src="images/icons/uxDev.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="devSkillDescription" class="jC-columns jC-columns-70">
+                <div id="webDevSkillDesc" class="jC-expandable jC-expanded">
+                    <div class="jC-content-dark jC-row">
+                        <h1>Web Development</h1>
+                        <div class='jC-row'>
+                            <p class="text-cntr text-bold overViewDesc">
+                                Experienced in designing / implementing solutions with both front-end and back-end
+                                web
+                                development technologies on a variety of industry standard IDE's, platforms,
+                                frameworks, and environments.
+                            </p>
+                            <div class="jC-columns">
+                                <h1>Frontend</h1>
+                                <ul>
+                                    <li><h2>HTML5, CSS3, JavaScript</h2></li>
+                                    <li><h2>Mobile First Design</h2></li>
+                                    <li><h2>Responsive Web Design</h2></li>
+                                    <li><h2>User Experience(UX)</h2></li>
+                                    <li><h2>jQuery / jQuery Mobile</h2></li>
+                                    <li><h2>Bootstrap, Sass, WC3</h2></li>
+                                </ul>
+                            </div>
+                            <div class="jC-columns">
+                                <h1>Backend</h1>
+                                <ul>
+                                    <li><h2>JavaScript, PHP, SQL, XML, XHTML</h2></li>
+                                    <li><h2>DOM Manipulation (AJAX, JSON)</h2></li>
+                                    <li><h2>MVC Framework</h2></li>
+                                    <li><h2>MVC5 ASP.NET</h2></li>
+                                    <li><h2>JPS.NET, JSTL</h2></li>
+                                    <li><h2>Data Management (Database)</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jC-content-dark jC-row dev-col2-row2">
+                        <h1>Related Projects</h1>
+                        <p class="text-cntr quote">(click to view project)</p>
+                        <div class="jC-row">
+                            <br>
+                            <h1 class="no-border webProjectTitle jChrisApi jChrisLink">
+                                j<span class="text-size-150">C</span>hris
+                                <span class="text-size-150">A</span>pi</h1>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div id="mobileDevSkillDesc" class="jC-expandable jC-collapse">
+                    <div class="jC-content-dark jC-row">
+                        <h1>Mobile Development</h1>
+                        <div class='jC-row'>
+                            <br>
+                            <p class="text-cntr text-bold">
+                                Experienced in building mobile applications using current industry practices and tools.
+                            </p>
+                            <ul>
+                                <li><p>Smart device client-side development experience includes offline data-access,
+                                    testing, debugging, security, deployment, and exception handling.
+                                </p></li>
+                                <li><br></li>
+                                <li>
+                                    <p>Exposed to writing mobile client software that runs on popular mobile
+                                        devices.</p>
+                                </li>
+                                <li><br></li>
+                                <li>
+                                    <p>
+                                        Learning native smart device languages.
+                                    </p>
+                                </li>
+                                <li><br></li>
+                                <li>
+                                    <p class="quote">
+                                        *jChris API designed to support mobile implementation*
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="jC-content-dark jC-row dev-col2-row2">
+                        <h1>Platforms and Tools</h1>
+                        <ul>
+                            <li><h2>Webstorm</h2></li>
+                            <li><h2>jQuery Mobile</h2></li>
+                            <li><h2>Object Oriented javaScript</h2></li>
+                            <li><h2>Phone Gap</h2></li>
+                            <li><h2>Cordova</h2></li>
+                            <li><h2>Smart Device Emulators</h2></li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+                <div id="softwareDevSkillDesc" class="jC-expandable jC-collapse">
+                    <div class="jC-content-dark jC-row">
+                        <h1>Software Development</h1>
+                        <div class='jC-row'>
+                            <p class="text-cntr text-bold">
+                                Capable of building software solutions with various purposes. Proficient coding on a
+                                variety of industry standard IDE's and and software development platforms.
+                            </p>
+                            <div class="jC-columns">
+                                <h1>Experience</h1>
+                                <ul>
+                                    <li><h2>Data Management</h2></li>
+                                    <li><h2>Games</h2></li>
+                                    <li><h2>Basic Physics Simulation</h2></li>
+                                    <li><h2>Basic AI</h2></li>
+                                </ul>
+                            </div>
+                            <div class="jC-columns">
+                                <h1>Platforms</h1>
+                                <ul>
+                                    <li><h2>Microsoft Visual Studio</h2></li>
+                                    <li><h2>Java NetBeans IDE</h2></li>
+                                    <li><h2>Microsoft Access</h2></li>
+                                    <li><h2>mySql Server</h2></li>
+                                    <li><h2>BlueJ</h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jC-content-dark jC-row dev-col2-row2">
+                        <h1>Related Projects</h1>
+                        <p class="text-cntr quote">(click to view project)</p>
+                        <div class="jC-row">
+                            <div class="jC-columns">
+                                <h3>C# Windows Forms Game</h3>
+                                <h1 class="no-border webProjectTitle jChrisApi jChrisLink">
+                                    <span class="text-size-150">N</span>-puzzle</h1>
+                            </div>
+                            <div class="jC-columns">
+                                <h3>C# XNA</h3>
+                                <h1 class="no-border webProjectTitle jChrisApi jChrisLink">
+                                    <span class="text-size-150">S</span>ubsistence</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div id="uxDevSkillDesc" class="jC-expandable jC-collapse">
+                    <div class="jC-content-dark jC-row">
+                        <h1>UX Design Development</h1>
+                        <div class="jC-row">
+                            <p class="text-cntr text-bold">
+                                Extensive knowledge of the UX design process. Capable of quickly and efficiently
+                                producing UX deliverables utilizing various techniques with primary and secondary
+                                targeted market segment user research data.
+                                <br>
+                            </p>
+                            <h1>Deliverables</h1>
+                            <ul>
+                                <li><h2>Wireframes</h2></li>
+                                <li><h2>Personas</h2></li>
+                                <li><h2>Scenarios</h2></li>
+                                <li><h2>Design prototypes</h2></li>
+                                <li><h2>System mapping</h2></li>
+                                <li><h2>Experience mapping</h2></li>
+                                <li><h2>Targeted market segment user research</h2></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="jC-content-dark jC-row dev-col2-row2">
+                        <h1>Tools / Platform Experience</h1>
+                        <ul>
+                            <li><h2>Photoshop</h2></li>
+                            <li><h2>Illustrator</h2></li>
+                            <li><h2>JustinMind Prototyper</h2></li>
+                            <li><h2>Microsoft Visio</h2></li>
+                            <li><h2>Visual Paradigm</h2></li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="jC-row jC-content-dark transistion3 transition3 not-visible"
+         data-jc-selectGroup="concepts"
+         data-jc-selectType="expandable">
+
+        <div id='conceptualSkills'>
+            <div class="jC-row">
+                <h1>Concepts</h1>
+                <div class="jC-columns skillBgs">
+                    <div class="jC-columns">
+                        <div class="jC-row ">
+                            <div class="skillText">
+                                <br>
+                                Agile Methodologies
+                            </div>
+                            <img data-jc-selector="#agileConceptInfo" src="images/icons/agile.png" draggable="false"
+                                 data-jc-selected="images/icons/agileHover.png"
+                                 data-jc-unselected="images/icons/agile.png">
+                        </div>
+                    </div>
+                    <div id='qaConcept' class="jC-columns">
+                        <div id='agileConcept' class="jC-row">
+                            <div class="skillText">
+                                <br>
+                                Quality Assurance
+                            </div>
+                            <img data-jc-selector="#qaConceptInfo" src="images/icons/qualityAssurance.png"
+                                 draggable="false"
+                                 data-jc-selected="images/icons/qualityAssuranceHover.png"
+                                 data-jc-unselected="images/icons/qualityAssurance.png">
+                        </div>
+                    </div>
+                </div>
+                <div id='mobileFirstConcept' class="jC-columns skillBgs">
+                    <div class="jC-columns">
+                        <div class="jC-row">
+                            <div class="skillText">
+                                <br>
+                                Mobile First Design
+                            </div>
+                            <img data-jc-selector="#mobileFirstConceptInfo" src="images/icons/mobileFirst.png"
+                                 draggable="false"
+                                 data-jc-selected="images/icons/mobileFirstHover.png"
+                                 data-jc-unselected="images/icons/mobileFirst.png">
+                        </div>
+                    </div>
+                    <div id='oopConcept' class="jC-columns">
+                        <div class="jC-row">
+                            <div class="skillText">
+                                Object Oriented Programming
+                            </div>
+                            <img data-jc-selector="#oopConceptInfo" src="images/icons/oop.png" draggable="false"
+                                 data-jc-selected="images/icons/oopHover.png"
+                                 data-jc-unselected="images/icons/oop.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="conceptDescription" class="jC-row">
+                <div id="agileConceptInfo" class="jC-row jC-expandable jC-collapse">
+                    <h1>Agile Software Development</h1>
+                    <br>
+                    <p class="text-cntr text-bold">
+                        Familiar with the methods and practices of Agile Software Developement. Agile methods I have
+                        studied and worked
+                        with include (but are not limited to):<br><br>
+                    </p>
+                    <ul>
+                        <li><h2>Adaptive software development (ASD)</h2></li>
+                        <li><h2>Agile modeling</h2></li>
+                        <li><h2>Agile Unified Process (AUP)</h2></li>
+                        <li><h2>Crystal Clear Methods</h2></li>
+                        <li><h2>Disciplined agile delivery</h2></li>
+                        <li><h2>Dynamic systems development method (DSDM)</h2></li>
+                        <li><h2>Extreme programming (XP)</h2></li>
+                        <li><h2>Feature-driven development (FDD)</h2></li>
+                        <li><h2>Lean software development</h2></li>
+                        <li><h2>Scrum</h2></li>
+                    </ul>
+                </div>
+                <div id="qaConceptInfo" class="jC-row jC-expandable jC-collapse">
+                    <h1>Quality Assurance Software Testing</h1>
+                    <p class="text-cntr">
+                        Versed in various Quality Assurance software testing methods, stages, concepts, and approaches.
+                    </p>
+                    <br>
+                    <div id='qaDescription' class="text-cntr">
+                        <div class="jC-columns">
+                            <div class="jC-columns">
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">General Concepts</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Testing & Development V Model<br>
+                                        Version Control (Source Control)<br>
+                                        Continuous Integration<br>
+                                        Test Driven Development<br>
+                                        Cyclomatic Complexiity<br>
+                                        Control Flow<br>
+                                        Memory Leak Detection<br>
+                                        Mutation Testing<br>
+                                        Code Review Process<br><br>
+                                    </div>
+                                </div>
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Unit Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Agile Unit Testing<br>
+                                        Test Cases<br>
+                                        Test Drivers<br>
+                                        Static Testing<br>
+                                        Dynamic Testing<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jC-columns">
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Integration Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Coupling<br>
+                                        Granulation<br>
+                                        Intra-System Testing<br>
+                                        Inter-System Testing<br>
+                                        Pairwise Testing<br>
+                                        Incremental Approach<br>
+                                        Top-Down Approach<br>
+                                        Bottom-Up Approach<br>
+                                        Sandwich Approach<br>
+                                        Interface integrity<br>
+                                        Functional Validity<br>
+                                        End-to-end Validity<br>
+                                        Pairwise Validity<br>
+                                        Interface Stress<br>
+                                        System Endurance<br><br>
+                                    </div>
+                                </div>
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">System Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        User Acceptance(UAT)<br>
+                                        Business Acceptance(BAT)<br>
+                                        Extreme Programming<br>
+                                        User Stories<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jC-columns">
+                            <div class="jC-columns">
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Functional Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Test Vectors<br>
+                                        Orthogonal Arrays<br>
+                                        Equivalency Classes<br>
+                                        Boundary Value Analysis<br>
+                                        Decision Tables<br><br>
+                                    </div>
+                                </div>
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Performance Testing Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Performance Factors<br>
+                                        Bottlenecks<br>
+                                        Margin of Safety<br><br>
+                                    </div>
+                                </div>
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Database Testing</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        Application Layers<br>
+                                        Application Types<br>
+                                        Data integrity<br>
+                                        Data Validity<br>
+                                        Data Maniputlation<br>
+                                        Aspects of Correctness<br>
+                                        Normailization<br>
+                                        informal Specification<br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jC-columns">
+                                <div class="jC-expandable jC-transformable">
+                                    <h2 class="jC-trigger">Related Courses Completed</h2><br>
+                                    <div class="jC-unexpanded jC-transformable">
+                                        <h3>Programming: Software Quality Assurance</h3><br>
+                                        <div>Conestoga College - PROG2070</div>
+                                        <br>
+                                        <h3>Description</h3><br>
+                                        <div class="relatedCourse">
+                                            Software quality is everybody's job, no matter what their role in a software
+                                            product development or IT organization. In this course, we will explore
+                                            various approaches to testing and improving software quality. We will also
+                                            learn techniques, practices and tools that programmers employ to achieve
+                                            higher quality of software products.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mobileFirstConceptInfo" class="jC-row jC-expandable jC-collapse">
+                    <h1>Mobile First Desgin Philosophy</h1>
+                    <p>
+                        Knowledgeable in the practices, philosophies, implementation strategies associated with mobile
+                        first design philosophies. Experienced with most industry standard mobile first code assisting
+                        interfaces and frameworks.
+                    </p>
+                    <br>
+                </div>
+                <div id="oopConceptInfo" class="jC-row jC-expandable jC-collapse">
+                    <h1>Object Oriented Programming</h1>
+                    <p>
+                        Experienced with the Object Oriented Programming philosophies, concept, and coding
+                        techniques.
+                    </p>
+                    <h3>OOP Language Experience</h3>
+                    <h2>C#</h2>
+                    <h2>Java</h2>
+                    <h2>javaScript</h2>
+                    <h2>AngularJs</h2>
+                    <h2>XNA</h2>
+                    <h3>OOP Concept Experience</h3>
+                    <h2>Inheritence</h2>
+                    <h2>Object</h2>
+                    <h2>Class</h2>
+                    <h2>Super Class</h2>
+                    <h2>Encapsulation</h2>
+                    <h2>Polymorphism</h2>
+                    <h2>Abstraction</h2>
+                    <h2>Interfaces</h2>
+                    <h2>Scope</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="jC-row jC-content-dark transition3 not-visible">
+        <div id="languageSkills">
+            <h1>Languages and Platforms</h1>
+            <br><br>
+            <div class="languageHeader jC-row">
+                <h1>General Purpose Multi-Paradigm</h1>
+            </div>
+            <div class="jC-row">
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/cSharpIcon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/javaIcon.svg" draggable="false"/>
+                    </div>
+                </div>
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/mySqlIcon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/pythonIcon.svg" draggable="false"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jC-row">
+                <div class="languageHeader jC-row">
+                    <h1>Web Development Related</h1>
+                </div>
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/html5Icon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/css3Icon.svg" draggable="false"/>
+                    </div>
+                </div>
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/jsIcon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/jqueryIcon.svg" draggable="false"/>
+                    </div>
+                </div>
+            </div>
+            <div class="jC-row">
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/phpIcon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/nodeJsIcon.svg" draggable="false"/>
+                    </div>
+                </div>
+                <div class="jC-columns">
+                    <div class="jC-columns">
+                        <img src="images/icons/apacheIcon.svg" draggable="false"/>
+                    </div>
+                    <div class="jC-columns">
+                        <img src="images/icons/sassIcon.svg" draggable="false"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--//main-->*
+</section>
+<br>
+<br>
+<br>
+<br>
+<!--//main-->
+<!--//body-->
+</body>
+<script type="text/javascript" src="libs/jChris/jChris.js"></script>
+<script type="text/javascript" src="javascript/main.js"></script>
+
+<footer class="theme-darkgrey">
+    <p>&copy; Copyright Chris Martyniuk</p>
+</footer>
+</html>
+
