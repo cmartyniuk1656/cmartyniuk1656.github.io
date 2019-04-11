@@ -280,6 +280,216 @@
         <!--//softwareProjects-->
         <!--webProjects-->
         <div id="webProjects">
+            <div id='project-pathfound' class="jC-row jC-content-dark projects-software">
+                <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;j<span class="text-size-150">C</span>hris&nbsp;&nbsp;
+                </h1>
+                <div class="jC-row">
+                    <img id='enlargedJchrisImg' class="jC-imgLink jC-expandable jC-collapse"
+                         src="images/project/dynamicDomQuery.jpg"/>
+                </div>
+                <div class="jC-columns text-cntr">
+                    <h1 class="projectHeader">Description</h1>
+                    <p>jChris is a custom website building utility library that I created as an experiement to try and
+                        reproduce some of the features of other popular libraries and frameworks with my own code. I
+                        used this porfolio as a sandbox for creating and testing jChris. It currently consists of one
+                        javaSCript library, and 2 CSS files. jChris is still a work in progress.</p>
+                    <div class="jC-row ">
+                        <h1 class="projectHeader">Features</h1>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Responsive Mobile First Design</h1>
+                            <ul>
+                                <li>Utilizes CSS3 media queries and screen size based metrics to allow for easy to code
+                                    websites that look good on all devices
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Asynchronous DOM Manipulation</h1>
+                            <ul>
+                                <li>Basic XML / JSON HTTP request functionality allowing developers to modify the DOM
+                                    without reloading the browser window.
+                                </li>
+                                <li>Allows easy to code and and create AJAX DOM queries, so you can load specific
+                                    elements from seperate HTML page, and build a custom DOM in a single call.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Styled</h1>
+                            <ul>
+                                <li>Comes with easy to learn CCS3 class structures and color themes so you can easily
+                                    create and style a website an infinite number of ways. Constantly being updated and
+                                    improved.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Fully Automated Class Widgets</h1>
+                            <ul>
+                                <li>Contains widget class families that scan the DOM for expected relative nodes,
+                                    automating the creation of their own event handlers, animations, transitions, and
+                                    user interactive functionality. No additional internal javaScript coding required.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="jC-columns">
+                            <h1 class="projectFeatureHeader">Enhances JavaScript Readability / Reuseability</h1>
+                            <ul>
+                                <li>Many basic, commonly used javaScript functions have been repackaged, combined and /
+                                    or
+                                    renamed, into small, easily readable, higihly reusable jChris utility functions.
+                                    These
+                                    are designed to preform commonly required functionality, but are more
+                                    efficient and less tedious to code.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Cross Browser Compatibility</h1>
+                            <ul>
+                                <li>Utility functions often check for potential browser compatibility issues
+                                    and automate alternative execution strategies and/or implement polyfill prototype
+                                    work-arounds.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Transition / Animation Classes and Functions</h1>
+                            <ul>
+                                <li>Offers a small selection of animation / transition classes and functions, bypassing
+                                    the
+                                    hassle of manually coding them from scratch.
+                                <li>Built in animation and transition DOM manipulation interaction functions.
+                                    Asynchronously modify the dom and transition in a single function call.
+                                </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Function Chaining</h1>
+                            <ul>
+                                <li>Inheritence prototyping passing the object back into its constructor after
+                                    execution allows for chained function calls to allow faster and sometimes more
+                                    readable coding.
+                                </li>
+                                <li>Example: jC('#id').addClass('selected')
+                                    .showElement()
+                                    .hide()
+                                </li>
+                                <li>Above example adds a class to an element with an id of 'id', then displays the
+                                    element, then hides it.
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="jC-row">
+                        <h1 class="projectHeader projectHighlights">Highlighted Skills Learned</h1>
+                        <h1 class="projectHighlightsHeader">Responsive Design</h1>
+                        <p class="center">Building my own responsive CSS3 framework from scratch has greatly improved
+                            my understanding of media queries, effective HTML structuring, CSS property implications,
+                            mobile first design philosophy, and the inner mechanics of the HTML box model.</p>
+                        <h1 class="projectHighlightsHeader">AJAX Dynamic Web Pages</h1>
+                        <p class="center">This was possibly my biggest motivation for writing this library. AJAX is
+                            becoming very popular in modern web development and I thought it would be important to learn
+                            how to implement my own AJAX functions in vanilla javaScript. I believe there are a lot of
+                            people in my program who are using AJAX through tools like jQuery, jQuery mobile, and
+                            Bootstrap
+                            who either don't know that they are doing it, or have no idea how it works or what it is
+                            doing (the same could be said about responsive CSS).</p>
+                        <h1 class="projectHighlightsHeader">Cross Browser Compatibility</h1>
+                        <p class="center">With all the incredible frameworks and libraries available today, cross
+                            browser testing is almost a thing of the past now. I wanted to make sure that my library was
+                            tested on and compatible with IE11, firefox, and chrome at the very least. Using no shims,
+                            and
+                            no external compatibility assisting libraries I have minimized most of the issues that I
+                            have
+                            encountered, and learned a lot of about each browsing platform in the process.</p>
+                    </div>
+                </div>
+                <div class="jC-columns">
+                    <div class="project-video">
+                        <div class="jC-imgLinks jC-row noBorder">
+                            <h1 class="projectHeader projectHighlights">jChris Example Function</h1>
+                            <div class="jC-row">
+                                <h1 class="projectHighlightsHeader">AJAX DOM Construction Query</h1>
+                                <img id='smallJchrisImg' class="jC-imgLink jC-thumbnail jC-expandable"
+                                     src="images/project/dynamicDomQueryThumb.jpg"/>
+                            </div>
+                            <div class="jC-row">
+                                <h1 class="projectHeader projectHighlights">Code</h1>
+                                <b><p class='center'>jC.ajaxQuery(element, url, key, pushBrowserState,
+                                    jChrisEvents)</p></b>
+                                <ul>
+                                    <li><p><b>element(String) :</b> Specify the element you will insert the new DOM
+                                        segment
+                                        into. jChris supports selector notated strings. Example: '#elementId' will
+                                        search for a node object with an ID of elementID. Similarly '.myClass[0]'
+                                        will find the first node in the document with a class of 'myClass'.</p>
+                                    </li>
+                                    <li><p><b>url(String) :</b> Specify the url of the file you want select nodes from.
+                                        Example : 'projects.html'. Currently supports files in the same directory
+                                        only.</p>
+                                    </li>
+                                    <li><p><b>key(String) :</b> When creating your html files, you need to notate
+                                        areas that you might want to use in a DOM query by using comment tags in
+                                        this format:</p>
+                                        <p class="center">
+                                            <b>'&#60;!--keyIdentifier--></b>
+                                            <i>Your HTML code will be here</i>
+                                            <b>&#60;!--//keyIdentifier-->'.</b>
+                                        </p>
+                                        <p>
+                                            When you make the key you separate each object you wish to add with a '|'.
+                                            If you want to build a new div between two objects you can open it using
+                                            this syntax 'jC[id=idName]' and close it like this 'jC[/idName]'. Here is
+                                            an example key:</p>
+                                        <p class="center">
+                                            <b>
+                                                'heading|projectSelect|jC[id=projects]|webProjects|jC[/projects]'.
+                                            </b>
+                                        </p>
+                                    </li>
+                                    <li><p><b>pushBrowserState(Boolean) :</b> Specify whether or not the browser
+                                        should update the new DOM state into browser history. Assumes false if
+                                        left undefined.</p>
+                                    </li>
+                                    <li><p><b>jChrisEvents(function) :</b> If you want to define custom event handlers
+                                        for the new DOM objects you can pass them here. This function will run
+                                        after the new DOM is fully loaded.</p>
+                                    </li>
+                                </ul>
+                                <h1 class="projectHeader projectHighlights">Directly Grab Elements</h1>
+                                <b><p class='center'>jC('element').ajax('url').replaceById('elementId')</p></b>
+                                <ul>
+                                    <li><p>First element is the target to insert new element into, url is the url to
+                                        search for the new element's ID, elementID is the ID of the new element.</p>
+                                    </li>
+                                    <li><p>jChris gets the url's source HTML, and parses the markup as a string,
+                                        locating the full element before injecting it into the current DOM. </p>
+                                    </li>
+                                    <li><p>The ajax(url) argument can be replaced by a request object containing a url
+                                        string, custom events, a custom ajax request call, and a custom request type. </p>
+                                    </li>
+                                </ul>
+                                <a href="jchris.html">
+                                    <h1 class="no-border webProjectTitle jChrisApi">j<span class="text-size-150">C</span>hris
+                                        <span class="text-size-150">A</span>pi  <span class="text-size-150">
+                                        D</span>ocumentation</h1>
+                                    <h1 class="projectHeader">Under
+                                        Construction</h1><br><br>
+                                </a>
+                                <h1 class="projectHighlightsHeader">Notes</h1>
+                                <p> jChris is still an unfinished experiment and contains many bugs. I started
+                                    jChris with a basic knowledge of jQuery, but no experience using any other
+                                    libraries or frameworks that are rapidly becoming industry standards. I wanted to
+                                    learn the mechanics behind other libraries and frameworks, so that when I did adopt
+                                    them, I would be able to understand their capabilities at a more intermediate level.
+                                </p>
+                                <p>
+                                    Since I started this project I have learned a lot and could go back to optimize
+                                    it far beyond the current build, but I will put it down and advance on to more
+                                    practical, widely used libraries and frameworks.
+                                </p>
+
+                                <div id="jChrisDownload">
+                                    <a href="https://gist.github.com/cmartyniuk1656/83133fc0f344881b85ce887ac0233156" target="_blank">
+                                        <button class="downloadBtn">View Source</button>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id='projectJChris' class="jC-row jC-content-dark projects-software">
                 <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;j<span class="text-size-150">C</span>hris&nbsp;&nbsp;
                 </h1>
