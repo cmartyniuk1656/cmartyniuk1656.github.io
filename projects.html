@@ -281,7 +281,7 @@
         <!--webProjects-->
         <div id="webProjects">
             <div id='project-pathfound' class="jC-row jC-content-dark projects-software">
-                <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;j<span class="text-size-150">C</span>hris&nbsp;&nbsp;
+                <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;<span class="text-size-150">P</span>athfound&nbsp;&nbsp;
                 </h1>
                 <div class="jC-row">
                     <img id='enlargedJchrisImg' class="jC-imgLink jC-expandable jC-collapse"
@@ -289,82 +289,84 @@
                 </div>
                 <div class="jC-columns text-cntr">
                     <h1 class="projectHeader">Description</h1>
-                    <p>jChris is a custom website building utility library that I created as an experiement to try and
-                        reproduce some of the features of other popular libraries and frameworks with my own code. I
-                        used this porfolio as a sandbox for creating and testing jChris. It currently consists of one
-                        javaSCript library, and 2 CSS files. jChris is still a work in progress.</p>
+                    <p style="text-align: center;">Pathfound is an online platform for playing tabletop games like Dungeons and Dragons or Pathfinder. 
+                    This website was my capstone project for the program Information Technology Innovation and design (ITID) 
+                    at Conestoga college. I created this website from scratch and won the Capstone Project Award for IT 
+                    programs at the Conestoga Capstone Competition.</p>
                     <div class="jC-row ">
                         <h1 class="projectHeader">Features</h1>
                         <div class="jC-columns">
-                            <h1 class="projectFeatureHeader">Responsive Mobile First Design</h1>
+                            <h1 class="projectFeatureHeader">Persistent Users, Persistent Games</h1>
                             <ul>
-                                <li>Utilizes CSS3 media queries and screen size based metrics to allow for easy to code
-                                    websites that look good on all devices
+                                <li>
+                                    The website is backed by a mySQL database. Users create accounts and login just 
+                                    like you would anywhere else. Users can create game rooms and join them at anytime.
+                                    The gameplay and information in each game room is preserved even when nobody is playing,
+                                    so you can pick back up and jump back into the game at anytime.
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Asynchronous DOM Manipulation</h1>
+                            <h1 class="projectFeatureHeader">Real-time DOM Updates Served to Multiple Clients Simultaneously</h1>
                             <ul>
-                                <li>Basic XML / JSON HTTP request functionality allowing developers to modify the DOM
-                                    without reloading the browser window.
-                                </li>
-                                <li>Allows easy to code and and create AJAX DOM queries, so you can load specific
-                                    elements from seperate HTML page, and build a custom DOM in a single call.
+                                <li>Any updates made to the game room will autonomously update the DOM in real-time for all 
+                                    clients connected to that game room.
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Styled</h1>
+                            <h1 class="projectFeatureHeader">Multiplayer</h1>
                             <ul>
-                                <li>Comes with easy to learn CCS3 class structures and color themes so you can easily
-                                    create and style a website an infinite number of ways. Constantly being updated and
-                                    improved.
+                                <li>When users create a game, the game room is added to their joinable game list and they are 
+                                    given a game code to share with other players. Other users can join the game using the 
+                                    game code and it will be added to their list of joinable games too.
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Fully Automated Class Widgets</h1>
+                            <h1 class="projectFeatureHeader">Unlimited Games, Unlimited Gametime</h1>
                             <ul>
-                                <li>Contains widget class families that scan the DOM for expected relative nodes,
-                                    automating the creation of their own event handlers, animations, transitions, and
-                                    user interactive functionality. No additional internal javaScript coding required.
+                                <li>At this point, no games are ever deleted, and there is no limit on how many games you 
+                                    can be apart of at any time.
                                 </li>
+                            </ul>
+                            <h1 class="projectFeatureHeader">Many Additional Features</h1>
+                            <ul>
+                                <li>Dice rolling engine with chat output.
+                                </li>
+                                <li>Responsive design. You can play on your phone but it is not recommended!
+                                </li>
+                                <li>Multiple interchangeable game room views and layouts.
+                                </li>
+                                <li>Much more.</li>
                             </ul>
                         </div>
                         <div class="jC-columns">
-                            <h1 class="projectFeatureHeader">Enhances JavaScript Readability / Reuseability</h1>
+                            <h1 class="projectFeatureHeader">Real-time Persistent Chat</h1>
                             <ul>
-                                <li>Many basic, commonly used javaScript functions have been repackaged, combined and /
-                                    or
-                                    renamed, into small, easily readable, higihly reusable jChris utility functions.
-                                    These
-                                    are designed to preform commonly required functionality, but are more
-                                    efficient and less tedious to code.
+                                <li>I wrote my own real-time chat using only javaScript, PHP, and SQL. Each game room has 
+                                    its own chat where users can talk with each other in real-time. The chat logs are 
+                                    preserved forever allowing the history of each game to be preserved, similar to a facebook 
+                                    messenger group chat.
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Cross Browser Compatibility</h1>
+                            <h1 class="projectFeatureHeader">Interactive Gameboard</h1>
                             <ul>
-                                <li>Utility functions often check for potential browser compatibility issues
-                                    and automate alternative execution strategies and/or implement polyfill prototype
-                                    work-arounds.
+                                <li>The gameboard is fully interactive. It allows you choose map images, customize the size, 
+                                    place/remove character, NPC, item, and object token on the map grid, then move them around as you
+                                    please. Updates to the gameboard are served to all clients in the room in real-time.
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Transition / Animation Classes and Functions</h1>
+                            <h1 class="projectFeatureHeader">Player Uploaded Assets</h1>
                             <ul>
-                                <li>Offers a small selection of animation / transition classes and functions, bypassing
-                                    the
-                                    hassle of manually coding them from scratch.
-                                <li>Built in animation and transition DOM manipulation interaction functions.
-                                    Asynchronously modify the dom and transition in a single function call.
+                                <li>Players can upload their own assets to use for their games and accounts. They can upload 
+                                    character, NPC, item, object, and enemy tokens to be placed on the board. They can also upload 
+                                    their own maps to play on. These assets are hosted on the server and remembered for each user 
+                                    so they can easily add their uploaded assets to any game in the future.
+
                                 </li>
                             </ul>
-                            <h1 class="projectFeatureHeader">Function Chaining</h1>
+                            <h1 class="projectFeatureHeader">Player Character Database</h1>
                             <ul>
-                                <li>Inheritence prototyping passing the object back into its constructor after
-                                    execution allows for chained function calls to allow faster and sometimes more
-                                    readable coding.
-                                </li>
-                                <li>Example: jC('#id').addClass('selected')
-                                    .showElement()
-                                    .hide()
-                                </li>
-                                <li>Above example adds a class to an element with an id of 'id', then displays the
-                                    element, then hides it.
+                                <li>Tabletop game characters are complex with many stats and attributes to keep track of. Pathfound 
+                                    tries to streamline that process, allowing users to create, update and edit characters through 
+                                    a character builder form. The users characters are stored on their account so they can easily be 
+                                    updated, retrieved, or added to a game at any time. Important character stats are displayed in the 
+                                    active character tab in the game room.
                                 </li>
                             </ul>
                             <br>
