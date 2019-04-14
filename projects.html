@@ -283,15 +283,11 @@
             <div id='project-pathfound' class="jC-row jC-content-dark projects-software">
                 <h1 class="jC-row no-border webProjectTitle ">&nbsp;&nbsp;<span class="text-size-150">P</span>athfound&nbsp;&nbsp;
                 </h1>
-                <div class="jC-row">
-                    <img id='enlargedJchrisImg' class="jC-imgLink jC-expandable jC-collapse"
-                         src="images/project/dynamicDomQuery.jpg"/>
-                </div>
                 <div class="jC-columns text-cntr">
                     <h1 class="projectHeader">Description</h1>
                     <p style="text-align: center;">Pathfound is an online platform for playing tabletop games like Dungeons and Dragons or Pathfinder. 
                     This website was my capstone project for the program Information Technology Innovation and design (ITID) 
-                    at Conestoga college. I created this website from scratch and won the Capstone Project Award for IT 
+                    at Conestoga college. I created this website from scratch and won the 2018 Capstone Project Award for IT 
                     programs at the Conestoga Capstone Competition.</p>
                     <div class="jC-row ">
                         <h1 class="projectHeader">Features</h1>
@@ -328,7 +324,7 @@
                             <ul>
                                 <li>Dice rolling engine with chat output.
                                 </li>
-                                <li>Responsive design. You can play on your phone but it is not recommended!
+                                <li>Responsive design. You can play on your computer, tablet, phone, or any device with a browser.
                                 </li>
                                 <li>Multiple interchangeable game room views and layouts.
                                 </li>
@@ -338,7 +334,7 @@
                         <div class="jC-columns">
                             <h1 class="projectFeatureHeader">Real-time Persistent Chat</h1>
                             <ul>
-                                <li>I wrote my own real-time chat using only javaScript, PHP, and SQL. Each game room has 
+                                <li>I wrote my own real-time chat using javaScript, PHP, and SQL. Each game room has 
                                     its own chat where users can talk with each other in real-time. The chat logs are 
                                     preserved forever allowing the history of each game to be preserved, similar to a facebook 
                                     messenger group chat.
@@ -373,120 +369,46 @@
                         </div>
                     </div>
                     <div class="jC-row">
-                        <h1 class="projectHeader projectHighlights">Highlighted Skills Learned</h1>
-                        <h1 class="projectHighlightsHeader">Responsive Design</h1>
-                        <p class="center">Building my own responsive CSS3 framework from scratch has greatly improved
-                            my understanding of media queries, effective HTML structuring, CSS property implications,
-                            mobile first design philosophy, and the inner mechanics of the HTML box model.</p>
-                        <h1 class="projectHighlightsHeader">AJAX Dynamic Web Pages</h1>
-                        <p class="center">This was possibly my biggest motivation for writing this library. AJAX is
-                            becoming very popular in modern web development and I thought it would be important to learn
-                            how to implement my own AJAX functions in vanilla javaScript. I believe there are a lot of
-                            people in my program who are using AJAX through tools like jQuery, jQuery mobile, and
-                            Bootstrap
-                            who either don't know that they are doing it, or have no idea how it works or what it is
-                            doing (the same could be said about responsive CSS).</p>
-                        <h1 class="projectHighlightsHeader">Cross Browser Compatibility</h1>
-                        <p class="center">With all the incredible frameworks and libraries available today, cross
-                            browser testing is almost a thing of the past now. I wanted to make sure that my library was
-                            tested on and compatible with IE11, firefox, and chrome at the very least. Using no shims,
-                            and
-                            no external compatibility assisting libraries I have minimized most of the issues that I
-                            have
-                            encountered, and learned a lot of about each browsing platform in the process.</p>
+                        <h1 class="projectHeader projectHighlights">Conestoga Capstone Award 1st Place</h1>
+                        <img style="height: 200px; margin-top: 20px; margin-right: 15px;float: left;" src="images/project/first-place.png">
+                        <p>This web application won first place for IT capstone projects at the 2018 Conestoga College Capstone 
+                        Competition. This was a milestone accomplishment for me, not just to win first place, but also to win 
+                        as the only person competing without a group.</p>
                     </div>
                 </div>
                 <div class="jC-columns">
                     <div class="project-video">
                         <div class="jC-imgLinks jC-row noBorder">
-                            <h1 class="projectHeader projectHighlights">jChris Example Function</h1>
+                            <h1 class="projectHeader">Videos</h1>
                             <div class="jC-row">
-                                <h1 class="projectHighlightsHeader">AJAX DOM Construction Query</h1>
-                                <img id='smallJchrisImg' class="jC-imgLink jC-thumbnail jC-expandable"
-                                     src="images/project/dynamicDomQueryThumb.jpg"/>
+                                <h1 style="margin: 15px 0 15px 0" class="projectHighlightsHeader">Create an Account</h1>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/create-an-account.mp4" type="video/mp4">
+                                </video>
                             </div>
                             <div class="jC-row">
-                                <h1 class="projectHeader projectHighlights">Code</h1>
-                                <b><p class='center'>jC.ajaxQuery(element, url, key, pushBrowserState,
-                                    jChrisEvents)</p></b>
-                                <ul>
-                                    <li><p><b>element(String) :</b> Specify the element you will insert the new DOM
-                                        segment
-                                        into. jChris supports selector notated strings. Example: '#elementId' will
-                                        search for a node object with an ID of elementID. Similarly '.myClass[0]'
-                                        will find the first node in the document with a class of 'myClass'.</p>
-                                    </li>
-                                    <li><p><b>url(String) :</b> Specify the url of the file you want select nodes from.
-                                        Example : 'projects.html'. Currently supports files in the same directory
-                                        only.</p>
-                                    </li>
-                                    <li><p><b>key(String) :</b> When creating your html files, you need to notate
-                                        areas that you might want to use in a DOM query by using comment tags in
-                                        this format:</p>
-                                        <p class="center">
-                                            <b>'&#60;!--keyIdentifier--></b>
-                                            <i>Your HTML code will be here</i>
-                                            <b>&#60;!--//keyIdentifier-->'.</b>
-                                        </p>
-                                        <p>
-                                            When you make the key you separate each object you wish to add with a '|'.
-                                            If you want to build a new div between two objects you can open it using
-                                            this syntax 'jC[id=idName]' and close it like this 'jC[/idName]'. Here is
-                                            an example key:</p>
-                                        <p class="center">
-                                            <b>
-                                                'heading|projectSelect|jC[id=projects]|webProjects|jC[/projects]'.
-                                            </b>
-                                        </p>
-                                    </li>
-                                    <li><p><b>pushBrowserState(Boolean) :</b> Specify whether or not the browser
-                                        should update the new DOM state into browser history. Assumes false if
-                                        left undefined.</p>
-                                    </li>
-                                    <li><p><b>jChrisEvents(function) :</b> If you want to define custom event handlers
-                                        for the new DOM objects you can pass them here. This function will run
-                                        after the new DOM is fully loaded.</p>
-                                    </li>
-                                </ul>
-                                <h1 class="projectHeader projectHighlights">Directly Grab Elements</h1>
-                                <b><p class='center'>jC('element').ajax('url').replaceById('elementId')</p></b>
-                                <ul>
-                                    <li><p>First element is the target to insert new element into, url is the url to
-                                        search for the new element's ID, elementID is the ID of the new element.</p>
-                                    </li>
-                                    <li><p>jChris gets the url's source HTML, and parses the markup as a string,
-                                        locating the full element before injecting it into the current DOM. </p>
-                                    </li>
-                                    <li><p>The ajax(url) argument can be replaced by a request object containing a url
-                                        string, custom events, a custom ajax request call, and a custom request type. </p>
-                                    </li>
-                                </ul>
-                                <a href="jchris.html">
-                                    <h1 class="no-border webProjectTitle jChrisApi">j<span class="text-size-150">C</span>hris
-                                        <span class="text-size-150">A</span>pi  <span class="text-size-150">
-                                        D</span>ocumentation</h1>
-                                    <h1 class="projectHeader">Under
-                                        Construction</h1><br><br>
-                                </a>
-                                <h1 class="projectHighlightsHeader">Notes</h1>
-                                <p> jChris is still an unfinished experiment and contains many bugs. I started
-                                    jChris with a basic knowledge of jQuery, but no experience using any other
-                                    libraries or frameworks that are rapidly becoming industry standards. I wanted to
-                                    learn the mechanics behind other libraries and frameworks, so that when I did adopt
-                                    them, I would be able to understand their capabilities at a more intermediate level.
-                                </p>
-                                <p>
-                                    Since I started this project I have learned a lot and could go back to optimize
-                                    it far beyond the current build, but I will put it down and advance on to more
-                                    practical, widely used libraries and frameworks.
-                                </p>
-
-                                <div id="jChrisDownload">
-                                    <a href="https://gist.github.com/cmartyniuk1656/83133fc0f344881b85ce887ac0233156" target="_blank">
-                                        <button class="downloadBtn">View Source</button>
-                                    </a>
-                                </div>
-
+                                <h1 style="margin: 15px 0 15px 0" class="projectHighlightsHeader">Create / Join Games</h1><br>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/create-join-game.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="jC-row">
+                                <h1 style="margin: 15px 0 15px 0" class="projectHighlightsHeader">Create / Import Character</h1><br>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/create-import-character.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="jC-row">
+                                <h1 style="margin: 15px 0 15px 0" class="projectHighlightsHeader">Using the Game Room</h1><br>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/interacting-with-gameroom.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="jC-row">
+                                <h1 style="margin: 15px 0 15px 0" class="projectHighlightsHeader">Uploading Custom Assets</h1><br>
+                                <video width="320" height="240" controls>
+                                    <source src="videos/uploading-assets.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
